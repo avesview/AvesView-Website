@@ -83,20 +83,67 @@
 
     <!-- Desktop category nav bar -->
     <div class="hidden md:block border-t border-gray-100">
-      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
+      <div class="relative max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
         <nav class="flex items-center gap-10 h-12 text-sm">
 
-          <!-- Ethernet Cables -->
+          <!-- Ethernet Cables — Mega Menu -->
           <div class="relative group h-full flex items-center">
-            <button class="flex items-center gap-1 text-gray-700 hover:text-brand-red font-semibold transition-colors">
+            <button class="flex items-center gap-1 text-gray-700 hover:text-brand-red font-semibold transition-colors h-full">
               Ethernet Cables
-              <svg class="w-3.5 h-3.5 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="w-3.5 h-3.5 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div class="absolute left-0 top-full pt-1 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
-              <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-1.5">
-                <NuxtLink to="/products?category=patch-cables" class="nav-dropdown-item">Patch Cables</NuxtLink>
-                <NuxtLink to="/products?category=bulk-cables" class="nav-dropdown-item">Bulk Cables</NuxtLink>
-                <NuxtLink to="/products?category=terminations" class="nav-dropdown-item">Terminations</NuxtLink>
+
+            <!-- Mega menu panel -->
+            <div class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 pt-0">
+              <div class="bg-white shadow-2xl border-t-2 border-brand-red" style="width: 640px;">
+                <div class="p-6">
+                  <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Shop Ethernet Cables</p>
+                  <div class="grid grid-cols-3 gap-4">
+
+                    <!-- Patch Cables -->
+                    <NuxtLink to="/products?category=patch-cables" class="group/card block overflow-hidden rounded-lg border border-gray-100 hover:border-brand-red hover:shadow-lg transition-all duration-200">
+                      <div class="relative h-36 bg-gray-50 overflow-hidden">
+                        <img src="https://m.media-amazon.com/images/I/51ncWDoAw0L.jpg" alt="Patch Cables" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-300" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <span class="absolute bottom-2 left-3 text-white font-semibold text-sm">Patch Cables</span>
+                      </div>
+                      <div class="p-3">
+                        <p class="text-xs text-gray-500 leading-snug">Pre-made cables in 5ft–100ft. Blue, Black, White.</p>
+                        <span class="text-brand-red text-xs font-semibold mt-1.5 inline-block">Shop Now →</span>
+                      </div>
+                    </NuxtLink>
+
+                    <!-- Bulk Cables -->
+                    <NuxtLink to="/products?category=bulk-cables" class="group/card block overflow-hidden rounded-lg border border-gray-100 hover:border-brand-red hover:shadow-lg transition-all duration-200">
+                      <div class="relative h-36 bg-gray-50 overflow-hidden">
+                        <img src="https://m.media-amazon.com/images/I/51HW5yOCeIL.jpg" alt="Bulk Cables" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-300" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <span class="absolute bottom-2 left-3 text-white font-semibold text-sm">Bulk Cables</span>
+                      </div>
+                      <div class="p-3">
+                        <p class="text-xs text-gray-500 leading-snug">1000ft spools, UTP & SFTP. Easy-pull boxes.</p>
+                        <span class="text-brand-red text-xs font-semibold mt-1.5 inline-block">Shop Now →</span>
+                      </div>
+                    </NuxtLink>
+
+                    <!-- Terminations -->
+                    <NuxtLink to="/products?category=terminations" class="group/card block overflow-hidden rounded-lg border border-gray-100 hover:border-brand-red hover:shadow-lg transition-all duration-200">
+                      <div class="relative h-36 bg-gray-50 overflow-hidden">
+                        <img src="https://m.media-amazon.com/images/I/51CaISpaFTL.jpg" alt="Terminations" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-300" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <span class="absolute bottom-2 left-3 text-white font-semibold text-sm">Terminations</span>
+                      </div>
+                      <div class="p-3">
+                        <p class="text-xs text-gray-500 leading-snug">RJ45 connectors, keystone jacks & crimp tools.</p>
+                        <span class="text-brand-red text-xs font-semibold mt-1.5 inline-block">Shop Now →</span>
+                      </div>
+                    </NuxtLink>
+
+                  </div>
+                  <div class="mt-4 pt-4 border-t border-gray-100">
+                    <NuxtLink to="/products" class="text-sm font-semibold text-gray-700 hover:text-brand-red transition-colors">Shop All Ethernet Cables →</NuxtLink>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -108,10 +155,10 @@
           <div class="relative group h-full flex items-center">
             <button class="flex items-center gap-1 text-gray-600 hover:text-brand-red font-medium transition-colors">
               Security Cameras
-              <svg class="w-3.5 h-3.5 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="w-3.5 h-3.5 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div class="absolute left-0 top-full pt-1 w-44 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
-              <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-1.5">
+            <div class="absolute left-0 top-full pt-0 w-44 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+              <div class="bg-white shadow-xl border-t-2 border-brand-red py-1.5">
                 <NuxtLink to="/products?category=cameras" class="nav-dropdown-item">Cameras</NuxtLink>
                 <NuxtLink to="/products?category=camera-accessories" class="nav-dropdown-item">Accessories</NuxtLink>
               </div>

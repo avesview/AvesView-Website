@@ -131,8 +131,8 @@
           <NuxtLink v-for="cat in shopCategories" :key="cat.id" :to="`/products?category=${cat.id}`"
             class="group border border-gray-200 rounded-lg p-5 hover:border-brand-red hover:shadow-md transition-all duration-200 bg-white"
           >
-            <div class="h-40 mb-4 overflow-hidden rounded-md bg-white">
-              <img :src="cat.image" :alt="cat.label" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-md bg-white mb-4">
+              <img :src="cat.image" :alt="cat.label" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
             </div>
             <h3 class="font-bold text-gray-900 text-sm mb-1">{{ cat.label }}</h3>
             <p class="text-gray-500 text-xs leading-snug mb-3">{{ cat.desc }}</p>

@@ -332,7 +332,7 @@ const shopCategories = [
     id: 'cameras',
     label: 'Security Cameras',
     desc: 'IP and analog cameras for commercial installations.',
-    image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80',
+    image: '/category-security-cameras.jpg',
   },
 ]
 

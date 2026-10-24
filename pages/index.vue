@@ -4,11 +4,11 @@
     <!-- ═══════════════════════════════════════════
          HERO
     ════════════════════════════════════════════ -->
-    <section class="relative overflow-hidden bg-gray-100" style="height: 700px;">
+    <section class="relative bg-gray-100" style="max-height: 700px; overflow: hidden;">
       <img
         src="/hero-bg.jpg"
         alt="AvesView CAT6 cable boxes on a warehouse pallet"
-        class="w-full h-full object-cover object-center"
+        class="w-full block"
       />
 
       <!-- Text overlay — same container as header, text aligns with logo -->

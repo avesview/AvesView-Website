@@ -228,7 +228,7 @@
               </div>
             </div>
             <div class="h-72 lg:h-auto relative overflow-hidden bg-gray-100">
-              <img src="/hero-slide2.webp" alt="Custom cables" class="w-full h-full object-cover object-center" />
+              <img src="/custom-cables-workbench.jpg" alt="Custom cables" class="w-full h-full object-cover object-center" />
             </div>
           </div>
         </div>

@@ -2,46 +2,88 @@
   <div class="bg-white">
 
     <!-- ═══════════════════════════════════════════
-         HERO
+         HERO CAROUSEL
     ════════════════════════════════════════════ -->
-    <section
-      class="relative"
-      style="height: 700px; background-image: url('/hero-bg-3840.webp'); background-repeat: no-repeat; background-size: cover; background-position: center 30%;"
-    >
+    <section class="relative overflow-hidden" style="height: 700px;" @mouseenter="pauseSlider" @mouseleave="resumeSlider">
 
-      <!-- Text overlay — same container as header, text aligns with logo -->
-      <div class="absolute inset-0 flex items-center">
-        <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 w-full">
-        <div class="max-w-lg">
-          <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Bulk Cable &amp; Connectivity</p>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-2">
-            Built for the trade.
-          </h1>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-red leading-tight mb-5">
-            Priced for volume.
-          </h2>
-          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-7">
-            Cable supply for installers, dealers and retailers.<br>
-            Order by the case or scale up to full pallets.
-          </p>
-          <div class="flex flex-wrap gap-3 items-center">
-            <NuxtLink to="/register" class="inline-flex items-center gap-2 bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
-              Request a Pallet Quote
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </NuxtLink>
-            <NuxtLink to="/products" class="inline-flex items-center gap-2 bg-white border-2 border-gray-900 text-gray-900 font-bold px-6 py-3.5 rounded text-sm hover:bg-gray-900 hover:text-white transition-all duration-200">
-              Shop All Products
-            </NuxtLink>
+      <!-- Slide 1: AvesView boxes — text LEFT -->
+      <div
+        class="absolute inset-0 transition-transform duration-700 ease-in-out"
+        :style="{ transform: `translateX(${(0 - currentSlide) * 100}%)` }"
+        style="background-image: url('/hero-bg-3840.webp'); background-size: cover; background-position: center 30%;"
+      >
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 w-full">
+            <div class="max-w-lg">
+              <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Bulk Cable &amp; Connectivity</p>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-2">Built for the trade.</h1>
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-red leading-tight mb-5">Priced for volume.</h2>
+              <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-7">
+                Cable supply for installers, dealers and retailers.<br>
+                Order by the case or scale up to full pallets.
+              </p>
+              <div class="flex flex-wrap gap-3 items-center">
+                <NuxtLink to="/register" class="inline-flex items-center gap-2 bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
+                  Request a Pallet Quote
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </NuxtLink>
+                <NuxtLink to="/products" class="inline-flex items-center gap-2 bg-white border-2 border-gray-900 text-gray-900 font-bold px-6 py-3.5 rounded text-sm hover:bg-gray-900 hover:text-white transition-all duration-200">
+                  Shop All Products
+                </NuxtLink>
+              </div>
+              <p class="text-gray-500 text-xs mt-3">Smaller orders welcome.</p>
+            </div>
           </div>
-          <p class="text-gray-500 text-xs mt-3">Smaller orders welcome.</p>
-        </div>
         </div>
       </div>
 
-      <!-- Badge bottom right -->
-      <div class="absolute bottom-4 right-5 bg-black/70 text-white text-xs font-medium px-3 py-1.5 rounded hidden md:block">
-        From cases to full pallets
+      <!-- Slide 2: Custom cables — text RIGHT -->
+      <div
+        class="absolute inset-0 transition-transform duration-700 ease-in-out"
+        :style="{ transform: `translateX(${(1 - currentSlide) * 100}%)` }"
+        style="background-image: url('/hero-slide2.webp'); background-size: cover; background-position: center 40%;"
+      >
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 w-full flex justify-end">
+            <div class="max-w-lg">
+              <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Custom Cable Manufacturing</p>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-2">Your cable.</h1>
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-red leading-tight mb-5">Your specifications.</h2>
+              <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-7">
+                Tell us the cable type, length, connectors and quantity.<br>
+                Built around your requirements.
+              </p>
+              <div class="flex flex-wrap gap-3 items-center">
+                <NuxtLink to="/register" class="inline-flex items-center gap-2 bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
+                  Request a Custom Cable
+                </NuxtLink>
+                <NuxtLink to="/contact" class="inline-flex items-center gap-2 bg-white border-2 border-gray-900 text-gray-900 font-bold px-6 py-3.5 rounded text-sm hover:bg-gray-900 hover:text-white transition-all duration-200">
+                  Discuss Your Project
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Nav dots -->
+      <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2.5 z-10">
+        <button
+          v-for="(_, i) in 2" :key="i"
+          @click="goToSlide(i)"
+          class="h-2.5 rounded-full transition-all duration-300"
+          :class="currentSlide === i ? 'bg-brand-red w-6' : 'bg-white/70 hover:bg-white w-2.5'"
+        />
+      </div>
+
+      <!-- Prev / Next arrows -->
+      <button @click="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/40 hover:bg-black/70 text-white flex items-center justify-center transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button @click="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/40 hover:bg-black/70 text-white flex items-center justify-center transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
     </section>
 
     <!-- ═══════════════════════════════════════════
@@ -182,6 +224,19 @@
 </template>
 
 <script setup>
+// Hero carousel
+const currentSlide = ref(0)
+let sliderTimer = null
+
+function goToSlide(i) { currentSlide.value = i }
+function nextSlide() { currentSlide.value = (currentSlide.value + 1) % 2 }
+function prevSlide() { currentSlide.value = (currentSlide.value + 1) % 2 === 0 ? 1 : 0 }
+function pauseSlider() { clearInterval(sliderTimer) }
+function resumeSlider() { sliderTimer = setInterval(nextSlide, 5000) }
+
+onMounted(() => { sliderTimer = setInterval(nextSlide, 5000) })
+onUnmounted(() => clearInterval(sliderTimer))
+
 const shopCategories = [
   {
     id: 'patch-cables',

@@ -3,11 +3,12 @@
     <!-- Top bar -->
     <div class="border-b border-brand-gray-800">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-8">
-        <span class="text-brand-gray-400 text-xs">B2B Wholesale — Private Label Manufacturer</span>
-        <div class="flex items-center gap-4 text-xs text-brand-gray-400">
+        <span class="text-brand-gray-400 text-xs hidden sm:block">B2B Wholesale — Private Label Manufacturer</span>
+        <span class="text-brand-gray-400 text-xs sm:hidden">B2B Wholesale</span>
+        <div class="flex items-center gap-3 text-xs text-brand-gray-400">
           <a href="tel:+17025255000" class="hover:text-white transition-colors">702-525-5000</a>
-          <span>|</span>
-          <a href="mailto:info@avesview.com" class="hover:text-white transition-colors">info@avesview.com</a>
+          <span class="hidden sm:inline">|</span>
+          <a href="mailto:info@avesview.com" class="hover:text-white transition-colors hidden sm:inline">info@avesview.com</a>
         </div>
       </div>
     </div>
@@ -57,8 +58,8 @@
             </div>
           </template>
           <template v-else>
-            <NuxtLink to="/login" class="nav-link text-sm">Sign In</NuxtLink>
-            <NuxtLink to="/register" class="btn-primary text-sm py-2">Apply for Account</NuxtLink>
+            <NuxtLink to="/login" class="nav-link text-sm hidden md:inline">Sign In</NuxtLink>
+            <NuxtLink to="/register" class="btn-primary text-sm py-2 hidden md:inline-block">Apply for Account</NuxtLink>
           </template>
 
           <!-- Mobile menu toggle -->
@@ -80,6 +81,19 @@
           <NuxtLink to="/products?category=rj45-connectors" class="nav-link py-2 px-2 rounded hover:bg-brand-gray-800" @click="mobileOpen = false">Connectors</NuxtLink>
           <NuxtLink to="/products?category=multi-packs" class="nav-link py-2 px-2 rounded hover:bg-brand-gray-800" @click="mobileOpen = false">Multi-Packs</NuxtLink>
         </nav>
+        <!-- Mobile auth actions -->
+        <div class="mt-3 pt-3 border-t border-brand-gray-800 flex flex-col gap-2">
+          <template v-if="user">
+            <NuxtLink to="/account" class="nav-link py-2 px-2 rounded hover:bg-brand-gray-800" @click="mobileOpen = false">My Account</NuxtLink>
+            <NuxtLink to="/account/orders" class="nav-link py-2 px-2 rounded hover:bg-brand-gray-800" @click="mobileOpen = false">My Orders</NuxtLink>
+            <NuxtLink v-if="isAdmin" to="/admin" class="nav-link py-2 px-2 rounded hover:bg-brand-gray-800" @click="mobileOpen = false">Admin Panel</NuxtLink>
+            <button @click="logout" class="text-left text-red-400 py-2 px-2 text-sm hover:text-red-300">Sign Out</button>
+          </template>
+          <template v-else>
+            <NuxtLink to="/login" class="nav-link py-2 px-2 rounded hover:bg-brand-gray-800" @click="mobileOpen = false">Sign In</NuxtLink>
+            <NuxtLink to="/register" class="btn-primary text-sm py-2 text-center" @click="mobileOpen = false">Apply for Account</NuxtLink>
+          </template>
+        </div>
       </div>
     </div>
   </header>

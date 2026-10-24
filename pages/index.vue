@@ -82,6 +82,37 @@
     </section>
 
     <!-- ═══════════════════════════════════════════
+         BENEFITS BAR
+    ════════════════════════════════════════════ -->
+    <section class="bg-white border-y border-gray-200">
+      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+          <div class="flex items-center gap-4 py-5 md:py-6 md:pr-8">
+            <svg class="w-8 h-8 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            <div>
+              <p class="font-bold text-gray-900 text-sm">Volume Pricing</p>
+              <p class="text-gray-500 text-xs mt-0.5">Competitive pricing for trade buyers</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 py-5 md:py-6 md:px-8">
+            <svg class="w-8 h-8 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            <div>
+              <p class="font-bold text-gray-900 text-sm">Case &amp; Pallet Orders</p>
+              <p class="text-gray-500 text-xs mt-0.5">From smaller orders to full pallets</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 py-5 md:py-6 md:pl-8">
+            <svg class="w-8 h-8 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            <div>
+              <p class="font-bold text-gray-900 text-sm">Los Angeles Warehouse</p>
+              <p class="text-gray-500 text-xs mt-0.5">Local pickup and delivery options</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
          SHOP BY CATEGORY
     ════════════════════════════════════════════ -->
     <section class="py-14 bg-white border-b border-gray-100">

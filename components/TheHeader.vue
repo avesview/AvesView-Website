@@ -1,13 +1,12 @@
 <template>
   <header class="bg-white shadow-sm border-b border-gray-200">
     <!-- Top utility bar — desktop only -->
-    <div class="hidden md:block border-b border-gray-100">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-8">
-        <span class="text-gray-500 text-xs">B2B Wholesale — Cat6 Ethernet Cable Manufacturer</span>
-        <div class="flex items-center gap-4 text-xs text-gray-500">
-          <a href="tel:+17025255000" class="hover:text-brand-red transition-colors">702-525-5000</a>
-          <span>|</span>
-          <a href="mailto:info@avesview.com" class="hover:text-brand-red transition-colors">info@avesview.com</a>
+    <div class="hidden md:block bg-black">
+      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-between h-8">
+        <span class="text-gray-300 text-xs">Wholesale supply for installers, dealers &amp; retailers</span>
+        <div class="flex items-center gap-2 text-xs text-gray-300">
+          <svg class="w-3.5 h-3.5 text-brand-red" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+          Los Angeles, CA
         </div>
       </div>
     </div>
@@ -65,8 +64,8 @@
             </div>
           </template>
           <template v-else>
-            <NuxtLink to="/login" class="text-gray-600 hover:text-brand-red text-sm transition-colors font-medium">Sign In</NuxtLink>
-            <NuxtLink to="/register" class="btn-primary text-sm py-2 px-4">Apply for Account</NuxtLink>
+            <NuxtLink to="/login" class="text-gray-600 hover:text-gray-900 text-sm transition-colors font-medium">Sign In</NuxtLink>
+            <NuxtLink to="/register" class="text-sm py-2 px-5 border-2 border-brand-red text-brand-red font-semibold rounded hover:bg-brand-red hover:text-white transition-all duration-200">Trade Account</NuxtLink>
           </template>
         </div>
 
@@ -168,6 +167,14 @@
           <!-- Pallet Deals (no submenu) -->
           <NuxtLink to="/products?category=pallet-deals" class="text-gray-600 hover:text-brand-red font-medium transition-colors">Pallet Deals</NuxtLink>
 
+          <!-- Quick Order — pushed to far right -->
+          <div class="ml-auto">
+            <NuxtLink to="/products" class="flex items-center gap-1.5 text-gray-600 hover:text-brand-red font-medium transition-colors text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              Quick Order
+            </NuxtLink>
+          </div>
+
         </nav>
       </div>
     </div>
@@ -218,7 +225,7 @@
 
         <!-- Contact -->
         <div class="mt-auto border-t border-gray-100 px-5 py-4">
-          <a href="tel:+17025255000" class="text-gray-500 text-sm block mb-1 hover:text-brand-red">📞 702-525-5000</a>
+          <a href="tel:+18188558833" class="text-gray-500 text-sm block mb-1 hover:text-brand-red">📞 (818) 855-8833</a>
           <a href="mailto:info@avesview.com" class="text-gray-500 text-sm hover:text-brand-red">✉️ info@avesview.com</a>
         </div>
       </div>

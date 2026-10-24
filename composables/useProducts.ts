@@ -34,6 +34,7 @@ export function useProducts() {
     { id: 'cat6-bulk', label: 'Bulk 1000ft' },
     { id: 'rj45-connectors', label: 'RJ45 Connectors' },
     { id: 'accessories', label: 'Accessories' },
+    { id: 'cameras', label: 'Security Cameras' },
   ]
 
   function getBySlug(slug: string): Product | undefined {

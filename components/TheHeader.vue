@@ -198,15 +198,15 @@
         </div>
         <nav class="flex flex-col py-4 px-3 gap-1">
           <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-1">Ethernet Cables</p>
-          <NuxtLink to="/products?category=patch-cables" class="mobile-nav-link pl-5" @click="mobileOpen = false">Patch Cables</NuxtLink>
-          <NuxtLink to="/products?category=bulk-cables" class="mobile-nav-link pl-5" @click="mobileOpen = false">Bulk Cables</NuxtLink>
-          <NuxtLink to="/products?category=terminations" class="mobile-nav-link pl-5" @click="mobileOpen = false">Terminations</NuxtLink>
-          <NuxtLink to="/products?category=sound-and-security" class="mobile-nav-link" @click="mobileOpen = false">Sound &amp; Security</NuxtLink>
+          <button class="mobile-nav-link pl-5 text-left" @click="navigate(`/products?category=patch-cables`)">Patch Cables</button>
+          <button class="mobile-nav-link pl-5 text-left" @click="navigate(`/products?category=bulk-cables`)">Bulk Cables</button>
+          <button class="mobile-nav-link pl-5 text-left" @click="navigate(`/products?category=terminations`)">Terminations</button>
+          <button class="mobile-nav-link text-left" @click="navigate(`/products?category=sound-and-security`)">Sound &amp; Security</button>
           <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-1 mt-2">Security Cameras</p>
-          <NuxtLink to="/products?category=cameras" class="mobile-nav-link pl-5" @click="mobileOpen = false">Cameras</NuxtLink>
-          <NuxtLink to="/products?category=camera-accessories" class="mobile-nav-link pl-5" @click="mobileOpen = false">Accessories</NuxtLink>
-          <NuxtLink to="/products?category=pallet-deals" class="mobile-nav-link" @click="mobileOpen = false">Pallet Deals</NuxtLink>
-          <NuxtLink to="/custom-cables" class="mobile-nav-link" @click="mobileOpen = false">Custom Cable Manufacturing</NuxtLink>
+          <button class="mobile-nav-link pl-5 text-left" @click="navigate('/products?category=cameras')">Cameras</button>
+          <button class="mobile-nav-link pl-5 text-left" @click="navigate('/products?category=camera-accessories')">Accessories</button>
+          <button class="mobile-nav-link text-left" @click="navigate(`/products?category=pallet-deals`)">Pallet Deals</button>
+          <button class="mobile-nav-link text-left" @click="navigate(`/custom-cables`)">Custom Cable Manufacturing</button>
         </nav>
         <div class="border-t border-gray-100 px-3 py-4 flex flex-col gap-1">
           <template v-if="user">
@@ -244,6 +244,11 @@ const { profile } = useProfile()
 const isAdmin = computed(() => profile.value?.role === 'admin')
 
 function handleLogoError() { logoError.value = true }
+
+function navigate(path) {
+  mobileOpen.value = false
+  router.push(path)
+}
 
 function doSearch() {
   if (searchQuery.value.trim()) {

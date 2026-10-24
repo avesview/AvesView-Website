@@ -43,8 +43,8 @@
         :style="{ transform: `translateX(${(1 - currentSlide) * 100}%)` }"
         style="background-image: url('/hero-slide2.webp'); background-size: cover; background-position: center 40%;"
       >
-        <!-- Dark overlay for readability on mobile -->
-        <div class="absolute inset-0 bg-black/50 md:bg-gradient-to-l md:from-black/10 md:via-black/30 md:to-black/60"></div>
+        <!-- Dark overlay: heavy on mobile, gradient on desktop -->
+        <div class="absolute inset-0 bg-black/75 md:bg-gradient-to-r md:from-black/70 md:via-black/40 md:to-black/10"></div>
         <div class="absolute inset-0 flex items-center">
           <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 w-full flex justify-start md:justify-end">
             <div class="max-w-lg">

@@ -131,8 +131,8 @@
           <NuxtLink v-for="cat in shopCategories" :key="cat.id" :to="`/products?category=${cat.id}`"
             class="group border border-gray-200 rounded-lg p-5 hover:border-brand-red hover:shadow-md transition-all duration-200 bg-white"
           >
-            <div class="h-36 flex items-center justify-center mb-4 overflow-hidden rounded-md bg-gray-50 p-2">
-              <img :src="cat.image" :alt="cat.label" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+            <div class="h-40 mb-4 overflow-hidden rounded-md bg-white">
+              <img :src="cat.image" :alt="cat.label" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
             <h3 class="font-bold text-gray-900 text-sm mb-1">{{ cat.label }}</h3>
             <p class="text-gray-500 text-xs leading-snug mb-3">{{ cat.desc }}</p>
@@ -326,7 +326,7 @@ const shopCategories = [
     id: 'sound-and-security',
     label: 'Sound & Security Cable',
     desc: 'Multi-conductor cable for commercial installations.',
-    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&q=80',
   },
   {
     id: 'cameras',

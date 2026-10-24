@@ -12,6 +12,8 @@ export default defineNuxtConfig({
 
   supabase: {
     redirect: false,
+    url: process.env.SUPABASE_URL || 'https://placeholder.supabase.co',
+    key: process.env.SUPABASE_KEY || 'placeholder-anon-key',
   },
 
   runtimeConfig: {

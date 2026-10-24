@@ -4,56 +4,44 @@
     <!-- ═══════════════════════════════════════════
          HERO
     ════════════════════════════════════════════ -->
-    <section class="bg-white overflow-hidden">
-      <div class="flex flex-col md:flex-row">
+    <section class="relative overflow-hidden bg-gray-100">
+      <!-- Full image at natural width — no cropping -->
+      <img
+        src="/hero-bg.jpg"
+        alt="AvesView CAT6 cable boxes on a warehouse pallet"
+        class="w-full block"
+      />
 
-        <!-- LEFT: text content -->
-        <div class="w-full md:w-5/12 flex items-center bg-white px-6 sm:px-10 lg:px-16 py-14 md:py-20">
-          <div class="max-w-lg">
-            <!-- Eyebrow -->
-            <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-4">Bulk Cable &amp; Connectivity</p>
-
-            <!-- Headline -->
-            <h1 class="text-4xl sm:text-5xl font-black text-gray-900 leading-tight mb-2">
-              Built for the trade.
-            </h1>
-            <h2 class="text-4xl sm:text-5xl font-black text-brand-red leading-tight mb-6">
-              Priced for volume.
-            </h2>
-
-            <!-- Subtext -->
-            <p class="text-gray-600 text-base leading-relaxed mb-8">
-              Cable supply for installers, dealers and retailers.<br>
-              Order by the case or scale up to full pallets.
-            </p>
-
-            <!-- CTAs -->
-            <div class="flex flex-wrap gap-3 items-center">
-              <NuxtLink to="/register" class="inline-flex items-center gap-2 bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
-                Request a Pallet Quote
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </NuxtLink>
-              <NuxtLink to="/products" class="inline-flex items-center gap-2 bg-white border-2 border-gray-800 text-gray-800 font-bold px-6 py-3.5 rounded text-sm hover:bg-gray-800 hover:text-white transition-all duration-200">
-                Shop All Products
-              </NuxtLink>
-            </div>
-            <p class="text-gray-400 text-xs mt-3">Smaller orders welcome.</p>
+      <!-- Text overlay — sits on the naturally blurred left side of the photo -->
+      <div class="absolute inset-0 flex items-center">
+        <div class="px-6 sm:px-10 lg:px-16 max-w-xl">
+          <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Bulk Cable &amp; Connectivity</p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-2">
+            Built for the trade.
+          </h1>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-red leading-tight mb-5">
+            Priced for volume.
+          </h2>
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-7">
+            Cable supply for installers, dealers and retailers.<br>
+            Order by the case or scale up to full pallets.
+          </p>
+          <div class="flex flex-wrap gap-3 items-center">
+            <NuxtLink to="/register" class="inline-flex items-center gap-2 bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
+              Request a Pallet Quote
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </NuxtLink>
+            <NuxtLink to="/products" class="inline-flex items-center gap-2 bg-white border-2 border-gray-900 text-gray-900 font-bold px-6 py-3.5 rounded text-sm hover:bg-gray-900 hover:text-white transition-all duration-200">
+              Shop All Products
+            </NuxtLink>
           </div>
+          <p class="text-gray-500 text-xs mt-3">Smaller orders welcome.</p>
         </div>
+      </div>
 
-        <!-- RIGHT: full image, no crop -->
-        <div class="w-full md:w-7/12 relative bg-gray-50">
-          <img
-            src="/hero-bg.jpg"
-            alt="AvesView CAT6 cable boxes on a warehouse pallet"
-            class="w-full h-full object-cover object-center"
-            style="min-height: 340px; max-height: 560px;"
-          />
-          <div class="absolute bottom-4 right-4 bg-black/70 text-white text-xs font-medium px-3 py-1.5 rounded hidden md:block">
-            From cases to full pallets
-          </div>
-        </div>
-
+      <!-- Badge bottom right -->
+      <div class="absolute bottom-4 right-5 bg-black/70 text-white text-xs font-medium px-3 py-1.5 rounded hidden md:block">
+        From cases to full pallets
       </div>
     </section>
 

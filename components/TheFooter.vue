@@ -1,79 +1,66 @@
 <template>
-  <footer class="bg-brand-black text-brand-gray-400">
-    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-        <!-- Brand -->
-        <div class="md:col-span-1">
-          <img src="/logo.jpg" alt="AvesView" class="h-12 object-contain mb-4" />
-          <p class="text-sm leading-relaxed">
-            Private label manufacturer of Cat6 Ethernet cables and network equipment. Serving contractors, installers, and businesses since 2020.
+  <footer class="bg-gray-900 text-gray-400">
+    <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Col 1: About -->
+        <div>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Cable supply for installers,<br>dealers and retailers.
           </p>
-          <div class="flex gap-3 mt-6">
-            <a href="#" class="w-9 h-9 bg-brand-gray-800 rounded flex items-center justify-center hover:bg-brand-red transition-colors">
-              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-            </a>
-            <a href="#" class="w-9 h-9 bg-brand-gray-800 rounded flex items-center justify-center hover:bg-brand-red transition-colors">
-              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </a>
-          </div>
         </div>
 
-        <!-- Products -->
+        <!-- Col 2: Shop -->
         <div>
-          <h3 class="text-white font-semibold mb-4">Products</h3>
-          <ul class="space-y-2 text-sm">
-            <li><NuxtLink to="/products?category=patch-cables" class="hover:text-brand-red transition-colors">Cat6 Patch Cables</NuxtLink></li>
-            <li><NuxtLink to="/products?category=cat6-shielded" class="hover:text-brand-red transition-colors">Cat6 Shielded (SFTP)</NuxtLink></li>
-            <li><NuxtLink to="/products?category=cat6-plenum" class="hover:text-brand-red transition-colors">Cat6 Plenum (CMP)</NuxtLink></li>
-            <li><NuxtLink to="/products?category=cat6-bulk" class="hover:text-brand-red transition-colors">Bulk 1000ft Cable</NuxtLink></li>
-            <li><NuxtLink to="/products?category=rj45-connectors" class="hover:text-brand-red transition-colors">RJ45 Connectors</NuxtLink></li>
-            <li><NuxtLink to="/products?category=multi-packs" class="hover:text-brand-red transition-colors">Multi-Packs</NuxtLink></li>
+          <h3 class="text-white font-semibold text-sm mb-4">Shop</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><NuxtLink to="/products?category=patch-cables" class="hover:text-white transition-colors">Patch Cables</NuxtLink></li>
+            <li><NuxtLink to="/products?category=bulk-cables" class="hover:text-white transition-colors">Bulk Ethernet Cable</NuxtLink></li>
+            <li><NuxtLink to="/products?category=sound-and-security" class="hover:text-white transition-colors">Sound &amp; Security</NuxtLink></li>
+            <li><NuxtLink to="/products?category=cameras" class="hover:text-white transition-colors">Security Cameras</NuxtLink></li>
           </ul>
         </div>
 
-        <!-- Company -->
+        <!-- Col 3: Customer Service -->
         <div>
-          <h3 class="text-white font-semibold mb-4">Company</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="#about" class="hover:text-brand-red transition-colors">About AvesView</a></li>
-            <li><NuxtLink to="/register" class="hover:text-brand-red transition-colors">Wholesale Accounts</NuxtLink></li>
-            <li><a href="mailto:info@avesview.com" class="hover:text-brand-red transition-colors">Contact Us</a></li>
-            <li><a href="#" class="hover:text-brand-red transition-colors">Shipping Policy</a></li>
-            <li><a href="#" class="hover:text-brand-red transition-colors">Return Policy</a></li>
+          <h3 class="text-white font-semibold text-sm mb-4">Customer Service</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><NuxtLink to="/products" class="hover:text-white transition-colors">Quick Order</NuxtLink></li>
+            <li><NuxtLink to="/payment" class="hover:text-white transition-colors">Make a Payment</NuxtLink></li>
+            <li><NuxtLink to="/shipping" class="hover:text-white transition-colors">Shipping &amp; Returns</NuxtLink></li>
+            <li><NuxtLink to="/contact" class="hover:text-white transition-colors">Contact Us</NuxtLink></li>
           </ul>
         </div>
 
-        <!-- Contact -->
+        <!-- Col 4: Contact -->
         <div>
-          <h3 class="text-white font-semibold mb-4">Contact</h3>
+          <h3 class="text-white font-semibold text-sm mb-4">Contact</h3>
           <ul class="space-y-3 text-sm">
-            <li class="flex gap-3">
-              <svg class="w-4 h-4 mt-0.5 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>4200 Verdant St<br>Los Angeles, CA 90039</span>
+            <li>
+              <a href="tel:+18188558833" class="flex items-center gap-2.5 hover:text-white transition-colors">
+                <svg class="w-4 h-4 text-brand-red flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                (818) 855-8833
+              </a>
             </li>
-            <li class="flex gap-3">
-              <svg class="w-4 h-4 mt-0.5 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <a href="tel:+17025255000" class="hover:text-white">702-525-5000</a>
-            </li>
-            <li class="flex gap-3">
-              <svg class="w-4 h-4 mt-0.5 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:info@avesview.com" class="hover:text-white">info@avesview.com</a>
+            <li>
+              <div class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-brand-red flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                Los Angeles, CA
+              </div>
             </li>
           </ul>
-          <div class="mt-6 p-3 bg-brand-gray-900 rounded border border-brand-gray-800">
-            <p class="text-xs text-brand-gray-500">Warehouse Hours</p>
-            <p class="text-sm text-white mt-1">Mon–Fri: 8AM–5PM PST</p>
-          </div>
         </div>
+
       </div>
     </div>
 
-    <div class="border-t border-brand-gray-800">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-brand-gray-500">
-        <span>© {{ new Date().getFullYear() }} AvesView. All rights reserved.</span>
-        <div class="flex gap-4">
-          <a href="#" class="hover:text-brand-red">Privacy Policy</a>
-          <a href="#" class="hover:text-brand-red">Terms of Service</a>
+    <!-- Bottom bar -->
+    <div class="border-t border-gray-800">
+      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+        <span>© AvesView</span>
+        <div class="flex gap-5">
+          <a href="/privacy" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+          <a href="/terms" class="hover:text-gray-300 transition-colors">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>

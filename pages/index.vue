@@ -68,138 +68,177 @@
 
       <!-- Nav dots -->
       <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2.5 z-10">
-        <button
-          v-for="(_, i) in 2" :key="i"
-          @click="goToSlide(i)"
+        <button v-for="(_, i) in 2" :key="i" @click="goToSlide(i)"
           class="h-2.5 rounded-full transition-all duration-300"
           :class="currentSlide === i ? 'bg-brand-red w-6' : 'bg-white/70 hover:bg-white w-2.5'"
         />
       </div>
-
-      <!-- Prev / Next arrows -->
       <button @click="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/40 hover:bg-black/70 text-white flex items-center justify-center transition-colors">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
       </button>
       <button @click="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/40 hover:bg-black/70 text-white flex items-center justify-center transition-colors">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
       </button>
-
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         TRUST / BENEFITS BAR
-    ════════════════════════════════════════════ -->
-    <section class="bg-white border-y border-gray-200">
-      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
-        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
-
-          <div class="flex items-center gap-4 py-5 md:py-6 md:pr-8">
-            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center">
-              <!-- Stack icon -->
-              <svg class="w-8 h-8 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
-            </div>
-            <div>
-              <p class="font-bold text-gray-900 text-sm">Volume Pricing</p>
-              <p class="text-gray-500 text-xs mt-0.5">Competitive pricing for trade buyers</p>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-4 py-5 md:py-6 md:px-8">
-            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center">
-              <!-- Box icon -->
-              <svg class="w-8 h-8 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-            </div>
-            <div>
-              <p class="font-bold text-gray-900 text-sm">Case &amp; Pallet Orders</p>
-              <p class="text-gray-500 text-xs mt-0.5">From smaller orders to full pallets</p>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-4 py-5 md:py-6 md:pl-8">
-            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center">
-              <!-- Warehouse icon -->
-              <svg class="w-8 h-8 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-            </div>
-            <div>
-              <p class="font-bold text-gray-900 text-sm">Los Angeles Warehouse</p>
-              <p class="text-gray-500 text-xs mt-0.5">Local pickup and delivery options</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </section>
 
     <!-- ═══════════════════════════════════════════
          SHOP BY CATEGORY
     ════════════════════════════════════════════ -->
-    <section class="py-14 bg-white">
+    <section class="py-14 bg-white border-b border-gray-100">
       <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
-
-        <!-- Section header -->
-        <div class="flex items-center justify-between mb-8">
-          <h2 class="text-2xl sm:text-3xl font-black text-gray-900">Shop by Category</h2>
-          <NuxtLink to="/products" class="text-brand-red text-sm font-semibold hover:underline flex items-center gap-1">
+        <div class="flex items-end justify-between mb-8">
+          <div>
+            <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-1">Shop by Category</p>
+            <h2 class="text-3xl sm:text-4xl font-black text-gray-900">Find the right products</h2>
+          </div>
+          <NuxtLink to="/products" class="text-brand-red text-sm font-semibold hover:underline flex items-center gap-1 flex-shrink-0">
             View all products
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </NuxtLink>
         </div>
-
-        <!-- Category cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <NuxtLink
-            v-for="cat in shopCategories"
-            :key="cat.id"
-            :to="`/products?category=${cat.id}`"
-            class="group flex items-center gap-4 border border-gray-200 rounded-lg p-4 hover:border-brand-red hover:shadow-md transition-all duration-200 bg-white"
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <NuxtLink v-for="cat in shopCategories" :key="cat.id" :to="`/products?category=${cat.id}`"
+            class="group border border-gray-200 rounded-lg p-5 hover:border-brand-red hover:shadow-md transition-all duration-200 bg-white"
           >
-            <!-- Image thumb -->
-            <div class="flex-shrink-0 w-24 h-20 rounded-md overflow-hidden bg-gray-50">
-              <img :src="cat.image" :alt="cat.label" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <div class="h-36 flex items-center justify-center mb-4 overflow-hidden rounded-md bg-gray-50">
+              <img :src="cat.image" :alt="cat.label" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
-            <!-- Text -->
-            <div class="flex-1 min-w-0">
-              <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">{{ cat.label }}</h3>
-              <p class="text-gray-500 text-xs leading-snug">{{ cat.desc }}</p>
-              <div class="mt-2">
-                <svg class="w-5 h-5 text-brand-red group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </div>
-            </div>
+            <h3 class="font-bold text-gray-900 text-sm mb-1">{{ cat.label }}</h3>
+            <p class="text-gray-500 text-xs leading-snug mb-3">{{ cat.desc }}</p>
+            <svg class="w-5 h-5 text-brand-red group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </NuxtLink>
         </div>
-
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════
-         WHY AVESVIEW
+         VOLUME PURCHASING
     ════════════════════════════════════════════ -->
-    <section class="py-16 bg-gray-50 border-t border-gray-200">
+    <section class="bg-gray-50 border-b border-gray-100">
+      <div class="max-w-8xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- Left: warehouse image -->
+          <div class="h-72 lg:h-auto relative overflow-hidden">
+            <img src="/hero-bg-3840.webp" alt="AvesView warehouse" class="w-full h-full object-cover object-center" />
+          </div>
+          <!-- Right: text -->
+          <div class="px-8 lg:px-14 py-14 flex items-center">
+            <div class="max-w-lg">
+              <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Volume Purchasing</p>
+              <h2 class="text-3xl sm:text-4xl font-black text-gray-900 leading-tight mb-4">
+                Buy by the case.<br>Scale up to pallets.
+              </h2>
+              <p class="text-gray-600 text-base mb-6">Stock your next project or replenish your inventory with volume pricing.</p>
+              <ul class="space-y-2.5 mb-8">
+                <li v-for="item in volumeChecks" :key="item" class="flex items-center gap-3 text-gray-700 text-sm">
+                  <svg class="w-5 h-5 text-brand-red flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  {{ item }}
+                </li>
+              </ul>
+              <div class="flex flex-wrap gap-3 items-center">
+                <NuxtLink to="/register" class="inline-flex items-center bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
+                  Request a Pallet Quote
+                </NuxtLink>
+                <NuxtLink to="/products" class="text-sm font-semibold text-gray-800 hover:text-brand-red transition-colors flex items-center gap-1">
+                  Shop All Products
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </NuxtLink>
+              </div>
+              <p class="text-gray-400 text-xs mt-3">Smaller orders welcome.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         BUILT FOR YOUR BUSINESS
+    ════════════════════════════════════════════ -->
+    <section class="py-14 bg-white border-b border-gray-100">
       <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Why AvesView</p>
-            <h2 class="text-3xl font-black text-gray-900 mb-5">Built for the Trade</h2>
-            <p class="text-gray-600 text-base leading-relaxed mb-8">
-              AvesView is a private label manufacturer supplying Ethernet cables directly to contractors, system integrators, and IT professionals. No middlemen. Wholesale pricing on everything we make.
-            </p>
-            <div class="space-y-5">
-              <div v-for="benefit in benefits" :key="benefit.title" class="flex gap-4">
-                <div class="w-9 h-9 bg-brand-red rounded flex items-center justify-center flex-shrink-0">
-                  <svg class="w-4.5 h-4.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="benefit.icon"></svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-gray-900 text-sm">{{ benefit.title }}</h3>
-                  <p class="text-gray-500 text-sm mt-0.5">{{ benefit.desc }}</p>
-                </div>
+        <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-2">Built for Your Business</p>
+        <h2 class="text-3xl font-black text-gray-900 mb-10">Built around the way you buy</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <div v-for="feat in businessFeatures" :key="feat.title" class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <svg class="w-10 h-10 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" v-html="feat.icon"></svg>
               </div>
             </div>
-          </div>
-          <div class="grid grid-cols-2 gap-3">
-            <div v-for="img in sampleImages" :key="img" class="rounded-lg overflow-hidden h-44 border border-gray-100">
-              <img :src="img" alt="AvesView product" class="w-full h-full object-cover" loading="lazy" />
+            <div>
+              <h3 class="font-bold text-gray-900 mb-1">{{ feat.title }}</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">{{ feat.desc }}</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CUSTOM CABLE MANUFACTURING
+    ════════════════════════════════════════════ -->
+    <section class="py-14 bg-white border-b border-gray-100">
+      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
+        <div class="border border-gray-200 rounded-xl overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-10 lg:p-14 flex items-center">
+              <div>
+                <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Custom Cable Manufacturing</p>
+                <h2 class="text-3xl sm:text-4xl font-black text-gray-900 leading-tight mb-4">
+                  Your cable. Your specifications.
+                </h2>
+                <p class="text-gray-600 text-base mb-8">
+                  Tell us the cable type, length, connectors and quantity.<br>
+                  We'll help you plan your custom order.
+                </p>
+                <NuxtLink to="/custom-cables" class="inline-flex items-center bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
+                  Request a Custom Cable
+                </NuxtLink>
+              </div>
+            </div>
+            <div class="h-72 lg:h-auto relative overflow-hidden bg-gray-100">
+              <img src="/hero-slide2.webp" alt="Custom cables" class="w-full h-full object-cover object-center" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         QUICK ORDER + MAKE A PAYMENT
+    ════════════════════════════════════════════ -->
+    <section class="py-12 bg-white border-b border-gray-100">
+      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-gray-200 border border-gray-200 rounded-xl overflow-hidden">
+
+          <div class="flex items-start gap-5 p-8">
+            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center text-brand-red">
+              <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 text-base mb-1">Already know what you need?</h3>
+              <p class="text-gray-500 text-sm mb-3">Order by product or SKU.</p>
+              <NuxtLink to="/products" class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1">
+                Quick Order
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </NuxtLink>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-5 p-8">
+            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center text-brand-red">
+              <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 text-base mb-1">Have an invoice?</h3>
+              <p class="text-gray-500 text-sm mb-3">Pay online with your invoice number. No login needed.</p>
+              <NuxtLink to="/payment" class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1">
+                Make a Payment
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </NuxtLink>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -207,15 +246,19 @@
     <!-- ═══════════════════════════════════════════
          CTA BANNER
     ════════════════════════════════════════════ -->
-    <section class="py-16 bg-black">
-      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
-        <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Ready to Order at Wholesale?</h2>
-        <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-          Apply for a trade account today. Approval within 24 hours. No minimums on first orders.
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <NuxtLink to="/register" class="inline-flex items-center gap-2 bg-brand-red text-white font-bold px-8 py-4 rounded text-sm hover:bg-red-700 transition-colors">Apply for Trade Account</NuxtLink>
-          <a href="tel:+18188558833" class="inline-flex items-center gap-2 border-2 border-gray-600 text-gray-300 font-semibold px-8 py-4 rounded text-sm hover:border-white hover:text-white transition-all">(818) 855-8833</a>
+    <section class="bg-gray-900 py-14">
+      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-8">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-black text-white mb-2">Let's plan your next order.</h2>
+          <p class="text-gray-400 text-sm max-w-md">Our team is here to help with product recommendations and volume pricing.</p>
+        </div>
+        <div class="flex flex-wrap gap-3 flex-shrink-0">
+          <NuxtLink to="/register" class="inline-flex items-center bg-brand-red text-white font-bold px-7 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
+            Request a Quote
+          </NuxtLink>
+          <a href="tel:+18188558833" class="inline-flex items-center border-2 border-gray-600 text-white font-semibold px-7 py-3.5 rounded text-sm hover:border-white transition-all">
+            (818) 855-8833
+          </a>
         </div>
       </div>
     </section>
@@ -227,13 +270,11 @@
 // Hero carousel
 const currentSlide = ref(0)
 let sliderTimer = null
-
 function goToSlide(i) { currentSlide.value = i }
 function nextSlide() { currentSlide.value = (currentSlide.value + 1) % 2 }
 function prevSlide() { currentSlide.value = (currentSlide.value + 1) % 2 === 0 ? 1 : 0 }
 function pauseSlider() { clearInterval(sliderTimer) }
 function resumeSlider() { sliderTimer = setInterval(nextSlide, 17000) }
-
 onMounted(() => { sliderTimer = setInterval(nextSlide, 17000) })
 onUnmounted(() => clearInterval(sliderTimer))
 
@@ -247,8 +288,14 @@ const shopCategories = [
   {
     id: 'bulk-cables',
     label: 'Bulk Ethernet Cable',
-    desc: 'Cat6 cable in pull boxes and bulk spools.',
+    desc: 'Cables in pull boxes and bulk spools.',
     image: 'https://m.media-amazon.com/images/I/51HW5yOCeIL.jpg',
+  },
+  {
+    id: 'sound-and-security',
+    label: 'Sound & Security Cable',
+    desc: 'Multi-conductor cable for commercial installations.',
+    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=400&q=80',
   },
   {
     id: 'cameras',
@@ -258,34 +305,28 @@ const shopCategories = [
   },
 ]
 
-const benefits = [
+const volumeChecks = [
+  'Case and pallet quantities',
+  'Quotes tailored to your order',
+  'Support for installers, dealers & retailers',
+]
+
+const businessFeatures = [
   {
-    title: 'Private Label Manufacturer',
-    desc: 'We own the brand and factory relationship — passing savings directly to wholesale buyers.',
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>',
+    title: 'Volume Pricing',
+    desc: 'Get pricing based on your products and quantities.',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>',
   },
   {
     title: 'Los Angeles Warehouse',
-    desc: 'Stock on hand in LA. Local pickup at 4200 Verdant St, Los Angeles, CA 90039.',
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>',
+    desc: 'Coordinate pickup and shipping with our team.',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>',
   },
   {
-    title: 'B2B Wholesale Accounts',
-    desc: 'Register as a business to unlock wholesale pricing. Approval within 24 hours.',
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>',
+    title: 'Personal Support',
+    desc: 'Talk through product choices and order requirements.',
+    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>',
   },
-  {
-    title: 'Flexible Delivery',
-    desc: 'Local pickup or delivery to your job site. $1/mile, fully configurable.',
-    icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>',
-  },
-]
-
-const sampleImages = [
-  'https://m.media-amazon.com/images/I/51ncWDoAw0L.jpg',
-  'https://m.media-amazon.com/images/I/51nyGptTPOL.jpg',
-  'https://m.media-amazon.com/images/I/51HW5yOCeIL.jpg',
-  'https://m.media-amazon.com/images/I/51CaISpaFTL.jpg',
 ]
 
 useHead({

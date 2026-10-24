@@ -1,0 +1,1089 @@
+[
+  {
+    "id": "B0CZVJ9SZD",
+    "slug": "avesview-100-pack-cat-6-pass-through-rj45-connectors-ethernet-cable-connector-ft",
+    "title": "AvesView 100-Pack Cat 6 Pass Through RJ45 Connectors (Ethernet Cable Connector) FTP Shielded RJ45 Pass Through Connector/Modular Plugs for Solid or Stranded FTP Ethernet Cable (Shielded)",
+    "category": "rj45-connectors",
+    "description": "100-Pack Cat 6 Pass Through RJ45 Connectors (Ethernet Cable Connector) FTP Shielded RJ45 Pass Through Connector/Modular Plugs for Solid or Stranded FTP Ethernet Cable (Shielded)",
+    "variants": [
+      {
+        "asin": "B0CYP78RLK",
+        "sku": "E9-H8IE-3EHM",
+        "color": "Transparent",
+        "length": null,
+        "price": 19.99,
+        "image": "https://m.media-amazon.com/images/I/51CaISpaFTL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      },
+      {
+        "asin": "B0CXBL34XV",
+        "sku": "13-RQ56-3FQW",
+        "color": "Transparent",
+        "length": null,
+        "price": 14.99,
+        "image": "https://m.media-amazon.com/images/I/51CaISpaFTL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      }
+    ]
+  },
+  {
+    "id": "B0DVYQX8CG",
+    "slug": "avesview-cat-6-10-ft-ethernet-cable-10-pack-indoor-high-speed-10gbps-snagless-lo",
+    "title": "AvesView CAT 6 10 ft Ethernet Cable (10 Pack), Indoor High-Speed 10Gbps Snagless Long CAT6 10FT Ethernet Cable for Internet, Router, Modem, Gaming, PlayStation, Xbox, POE Camera",
+    "category": "multi-packs",
+    "description": "CAT 6 10 ft Ethernet Cable (10 Pack), Indoor High-Speed 10Gbps Snagless Long CAT6 10FT Ethernet Cable for Internet, Router, Modem, Gaming, PlayStation, Xbox, POE Camera",
+    "variants": [
+      {
+        "asin": "B0DSTWVQKT",
+        "sku": "850060447402",
+        "color": "Blue",
+        "length": "10ft",
+        "price": 29.99,
+        "image": "https://m.media-amazon.com/images/I/51M5ff2sS5L.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      },
+      {
+        "asin": "B0DL4B2W9K",
+        "sku": "850060447280",
+        "color": "Blue",
+        "length": "10ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/51ncWDoAw0L.jpg",
+        "inStock": true,
+        "warehouseQty": 2520,
+        "warehouseLocation": "Aisle 1 / Bay 16"
+      },
+      {
+        "asin": "B0DL48Q2Z7",
+        "sku": "850060447273",
+        "color": "White",
+        "length": "100ft",
+        "price": 20.99,
+        "image": "https://m.media-amazon.com/images/I/51jGnJmL9fL.jpg",
+        "inStock": true,
+        "warehouseQty": 2616,
+        "warehouseLocation": "Aisle 1 / Bay 15, Aisle 2 / Bay 18, Aisle 2 / Bay 23, Aisle 2 / Bay 24"
+      },
+      {
+        "asin": "B0DL45GD59",
+        "sku": "850060447259",
+        "color": "White",
+        "length": "25ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/51trbU3f+8L.jpg",
+        "inStock": true,
+        "warehouseQty": 136,
+        "warehouseLocation": "Aisle 2 / Bay 11"
+      },
+      {
+        "asin": "B0DSPN25V3",
+        "sku": "850060447310",
+        "color": "White",
+        "length": "5ft",
+        "price": 24.99,
+        "image": "https://m.media-amazon.com/images/I/41cnOk4LzwL.jpg",
+        "inStock": true,
+        "warehouseQty": 100,
+        "warehouseLocation": "Aisle 2 / Bay 12"
+      },
+      {
+        "asin": "B0DL46BBV6",
+        "sku": "850060447266",
+        "color": "White",
+        "length": "50ft",
+        "price": 14.99,
+        "image": "https://m.media-amazon.com/images/I/514z4ADCf4L.jpg",
+        "inStock": true,
+        "warehouseQty": 520,
+        "warehouseLocation": "Aisle 5 / Bay 5"
+      },
+      {
+        "asin": "B0DL45C7FS",
+        "sku": "850060447235",
+        "color": "Black",
+        "length": "50ft",
+        "price": 14.99,
+        "image": "https://m.media-amazon.com/images/I/51chhQmqc6L.jpg",
+        "inStock": true,
+        "warehouseQty": 2200,
+        "warehouseLocation": "Aisle 1 / Bay 11, Aisle 2 / Bay 26"
+      },
+      {
+        "asin": "B0DSTSP8BF",
+        "sku": "850060447358",
+        "color": "Black",
+        "length": "5ft",
+        "price": 24.99,
+        "image": "https://m.media-amazon.com/images/I/51wKcJrBniL.jpg",
+        "inStock": true,
+        "warehouseQty": 100,
+        "warehouseLocation": "Aisle 2 / Bay 12"
+      },
+      {
+        "asin": "B0DSTT7PN8",
+        "sku": "850060447334",
+        "color": "Blue",
+        "length": "5ft",
+        "price": 24.99,
+        "image": "https://m.media-amazon.com/images/I/51a-27d3JyL.jpg",
+        "inStock": true,
+        "warehouseQty": 50,
+        "warehouseLocation": "Aisle 2 / Bay 12"
+      },
+      {
+        "asin": "B0DS24KQYS",
+        "sku": "850060447341",
+        "color": "Black",
+        "length": "5ft",
+        "price": 7.99,
+        "image": "https://m.media-amazon.com/images/I/51Li1r6ObNL.jpg",
+        "inStock": true,
+        "warehouseQty": 250,
+        "warehouseLocation": "Aisle 2 / Bay 12"
+      },
+      {
+        "asin": "B0DS23WPXK",
+        "sku": "850060447327",
+        "color": "Blue",
+        "length": "5ft",
+        "price": 7.99,
+        "image": "https://m.media-amazon.com/images/I/516mfNIX3iL.jpg",
+        "inStock": true,
+        "warehouseQty": 500,
+        "warehouseLocation": "Aisle 2 / Bay 12"
+      },
+      {
+        "asin": "B0DS257G9R",
+        "sku": "850060447303",
+        "color": "White",
+        "length": "5ft",
+        "price": 6.99,
+        "image": "https://m.media-amazon.com/images/I/51vNd919ASL.jpg",
+        "inStock": true,
+        "warehouseQty": 750,
+        "warehouseLocation": "Aisle 2 / Bay 12"
+      },
+      {
+        "asin": "B0DS27Q4C5",
+        "sku": "850060447426",
+        "color": "Black",
+        "length": "75ft",
+        "price": 17.09,
+        "image": "https://m.media-amazon.com/images/I/51IgXYXuPRL.jpg",
+        "inStock": true,
+        "warehouseQty": 512,
+        "warehouseLocation": "Aisle 1 / Bay 20"
+      },
+      {
+        "asin": "B0DS23GCZC",
+        "sku": "850060447419",
+        "color": "White",
+        "length": "75ft",
+        "price": 18.99,
+        "image": "https://m.media-amazon.com/images/I/51U9-FsNgpL.jpg",
+        "inStock": true,
+        "warehouseQty": 608,
+        "warehouseLocation": "Aisle 2 / Bay 22"
+      },
+      {
+        "asin": "B0DS24KDYQ",
+        "sku": "850060447433",
+        "color": "Blue",
+        "length": "75ft",
+        "price": 18.99,
+        "image": "https://m.media-amazon.com/images/I/51DSmOVEk7L.jpg",
+        "inStock": true,
+        "warehouseQty": 544,
+        "warehouseLocation": "Aisle 1 / Bay 20"
+      },
+      {
+        "asin": "B0DL47PBG2",
+        "sku": "850060447242",
+        "color": "Black",
+        "length": "100ft",
+        "price": 20.99,
+        "image": "https://m.media-amazon.com/images/I/51dRhtB+KQL.jpg",
+        "inStock": true,
+        "warehouseQty": 2046,
+        "warehouseLocation": "Aisle 2 / Bay 14, Aisle 2 / Bay 27, Aisle 7 / Bay 11"
+      },
+      {
+        "asin": "B0CXBRP63D",
+        "sku": "46-27IG-LMN9",
+        "color": "Blue",
+        "length": "100ft",
+        "price": 20.99,
+        "image": "https://m.media-amazon.com/images/I/51XQPfeIXjL.jpg",
+        "inStock": true,
+        "warehouseQty": 4056,
+        "warehouseLocation": "Aisle 1 / Bay 10, Aisle 2 / Bay 10, Aisle 2 / Bay 19, Aisle 2 / Bay 20, Aisle 5 / Bay 2"
+      },
+      {
+        "asin": "B0DSTTVNZR",
+        "sku": "850060447372",
+        "color": "Black",
+        "length": "10ft",
+        "price": 29.99,
+        "image": "https://m.media-amazon.com/images/I/51VjAnOlQHL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      },
+      {
+        "asin": "B0DSTSQ9VL",
+        "sku": "850060447396",
+        "color": "White",
+        "length": "10ft",
+        "price": 29.99,
+        "image": "https://m.media-amazon.com/images/I/41Ry-gyB1lL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      },
+      {
+        "asin": "B0DS26R2GK",
+        "sku": "850060447365",
+        "color": "Black",
+        "length": "10ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/51IPEgAg9uL.jpg",
+        "inStock": true,
+        "warehouseQty": 840,
+        "warehouseLocation": "Aisle 1 / Bay 16, Aisle 1 / Bay 17"
+      },
+      {
+        "asin": "B0DL463KXC",
+        "sku": "850060447228",
+        "color": "Black",
+        "length": "25ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/51pcA-OwdXL.jpg",
+        "inStock": true,
+        "warehouseQty": 476,
+        "warehouseLocation": "Aisle 1 / Bay 17, Aisle 2 / Bay 11"
+      },
+      {
+        "asin": "B0CXBSFZ82",
+        "sku": "L2-35O4-RHY9",
+        "color": "Blue",
+        "length": "25ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/510etAqP7WL.jpg",
+        "inStock": true,
+        "warehouseQty": 884,
+        "warehouseLocation": "Aisle 2 / Bay 11"
+      },
+      {
+        "asin": "B0CXBYLPK4",
+        "sku": "EH-JGXM-55OB",
+        "color": "Blue",
+        "length": "50ft",
+        "price": 14.99,
+        "image": "https://m.media-amazon.com/images/I/51giL0hNLrL.jpg",
+        "inStock": true,
+        "warehouseQty": 1040,
+        "warehouseLocation": "Aisle 1 / Bay 17"
+      },
+      {
+        "asin": "B0DS289QZN",
+        "sku": "850060447389",
+        "color": "White",
+        "length": "10ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/51cLEb2tMAL.jpg",
+        "inStock": true,
+        "warehouseQty": 120,
+        "warehouseLocation": "Aisle 1 / Bay 16"
+      }
+    ]
+  },
+  {
+    "id": "B0DK18Q45T",
+    "slug": "avesview-cat-6-ethernet-cable-100-ft-4-pack-indoor-high-speed-10gbps-snagless-lo",
+    "title": "AvesView CAT 6 Ethernet Cable 100 FT (4 Pack) Indoor High-Speed 10Gbps Snagless Long CAT6 Internet Cable 100FT for Network, Router, Modem, Gaming, PlayStation, Xbox, POE Camera",
+    "category": "multi-packs",
+    "description": "CAT 6 Ethernet Cable 100 FT (4 Pack) Indoor High-Speed 10Gbps Snagless Long CAT6 Internet Cable 100FT for Network, Router, Modem, Gaming, PlayStation, Xbox, POE Camera",
+    "variants": [
+      {
+        "asin": "B0DK18Q45T",
+        "sku": "M0-ATWX-XEKW",
+        "color": "Blue",
+        "length": "100ft",
+        "price": 79.99,
+        "image": "https://m.media-amazon.com/images/I/51V8ZIQA4VL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      }
+    ]
+  },
+  {
+    "id": "B0GJCHGSHT",
+    "slug": "avesview-cat-6-ethernet-cable-1000ft-indoor-easy-pull-box-10gbps-premium-quality",
+    "title": "AvesView CAT 6 Ethernet Cable 1000ft Indoor Easy Pull Box 10Gbps Premium Quality High-Speed Bulk CAT6 Cable 1000ft Unshielded Copper Clad Aluminum (CCA) 23AWG 550MHz 1000 FT CAT 6 Cable",
+    "category": "cat6-shielded-bulk",
+    "description": "CAT 6 Ethernet Cable 1000ft Indoor Easy Pull Box 10Gbps Premium Quality High-Speed Bulk CAT6 Cable 1000ft Unshielded Copper Clad Aluminum (CCA) 23AWG 550MHz 1000 FT CAT 6 Cable",
+    "variants": [
+      {
+        "asin": "B0GHN8CSG9",
+        "sku": "850060447600",
+        "color": "Black",
+        "length": "1000ft",
+        "price": 89.99,
+        "image": "https://m.media-amazon.com/images/I/51HW5yOCeIL.jpg",
+        "inStock": true,
+        "warehouseQty": 154,
+        "warehouseLocation": "Aisle 3 / Bay 27, Aisle 3 / Bay 7, Aisle 5 / Bay 17, Aisle 7 / Bay 18"
+      },
+      {
+        "asin": "B0CXHMJD55",
+        "sku": "QH-Z5M8-RD2W",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 89.99,
+        "image": "https://m.media-amazon.com/images/I/51KnbduGNrL.jpg",
+        "inStock": true,
+        "warehouseQty": 296,
+        "warehouseLocation": "Aisle 2 / Bay 9, Aisle 5 / Bay 8, Aisle 7 / Bay 11, Overflow / Bay 1"
+      },
+      {
+        "asin": "B0GX5HMJ4Z",
+        "sku": "850060447648",
+        "color": "Green",
+        "length": "1000ft",
+        "price": 99.99,
+        "image": "https://m.media-amazon.com/images/I/51HdQ-hBOiL.jpg",
+        "inStock": true,
+        "warehouseQty": 59,
+        "warehouseLocation": "Aisle 1 / Bay 12, Aisle 7 / Bay 14"
+      },
+      {
+        "asin": "B0GHNDKVQV",
+        "sku": "850060447617",
+        "color": "White",
+        "length": "1000ft",
+        "price": 99.99,
+        "image": "https://m.media-amazon.com/images/I/51ccdrZ3+eL.jpg",
+        "inStock": true,
+        "warehouseQty": 121,
+        "warehouseLocation": "Aisle 5 / Bay 14, Aisle 7 / Bay 15, Overflow / Bay 1"
+      },
+      {
+        "asin": "B0GHNFMB9W",
+        "sku": "850060447624",
+        "color": "Yellow",
+        "length": "1000ft",
+        "price": 99.99,
+        "image": "https://m.media-amazon.com/images/I/51FtN+jdQfL.jpg",
+        "inStock": true,
+        "warehouseQty": 34,
+        "warehouseLocation": "Aisle 6 / Bay 2"
+      }
+    ]
+  },
+  {
+    "id": "B0H72K4PG5",
+    "slug": "avesview-cat-6-shielded-100-ft-ethernet-cable-indoor-high-speed-sftp-10gbps-shie",
+    "title": "AvesView CAT 6 Shielded 100 FT Ethernet Cable, Indoor High-Speed (SFTP) 10Gbps Shielded 100 Foot Ethernet Cable for Internet, Router, Computer, PlayStation, Xbox",
+    "category": "cat6-shielded",
+    "description": "CAT 6 Shielded 100 FT Ethernet Cable, Indoor High-Speed (SFTP) 10Gbps Shielded 100 Foot Ethernet Cable for Internet, Router, Computer, PlayStation, Xbox",
+    "variants": [
+      {
+        "asin": "B0H4XGDVG8",
+        "sku": "850060447785",
+        "color": "Standard",
+        "length": "100ft",
+        "price": 26.99,
+        "image": "https://m.media-amazon.com/images/I/51MCaQ-sxrL.jpg",
+        "inStock": true,
+        "warehouseQty": 260,
+        "warehouseLocation": "Overflow / Overflow"
+      },
+      {
+        "asin": "B0F2X5W18F",
+        "sku": "850060447488",
+        "color": "White",
+        "length": "100ft",
+        "price": 26.99,
+        "image": "https://m.media-amazon.com/images/I/518LN9x7chL.jpg",
+        "inStock": true,
+        "warehouseQty": 320,
+        "warehouseLocation": "Aisle 2 / Bay 17"
+      },
+      {
+        "asin": "B0GX5DTT3S",
+        "sku": "850060447716",
+        "color": "Yellow",
+        "length": "100ft",
+        "price": 26.99,
+        "image": "https://m.media-amazon.com/images/I/51ORPMbQ2BL.jpg",
+        "inStock": true,
+        "warehouseQty": 760,
+        "warehouseLocation": "Aisle 3 / Bay 18, Aisle 7 / Bay 15"
+      },
+      {
+        "asin": "B0DWLDCPGR",
+        "sku": "850060447525",
+        "color": "Standard",
+        "length": "100ft",
+        "price": 26.99,
+        "image": "https://m.media-amazon.com/images/I/51u8FLNQ3FL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": "Aisle 2 / Bay 13"
+      },
+      {
+        "asin": "B0DWLCSPF8",
+        "sku": "850060447518",
+        "color": "Standard",
+        "length": "50ft",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/51dhU+LQ1HL.jpg",
+        "inStock": true,
+        "warehouseQty": 897,
+        "warehouseLocation": "Aisle 6 / Bay 5, Aisle 7 / Bay 14"
+      },
+      {
+        "asin": "B0H5W25QCQ",
+        "sku": "850060447778",
+        "color": "Standard",
+        "length": "50ft",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/51HBfGifvSL.jpg",
+        "inStock": true,
+        "warehouseQty": 480,
+        "warehouseLocation": "Overflow / Bay 7"
+      },
+      {
+        "asin": "B0CX8CH2V5",
+        "sku": "7X-3PQV-IPFO",
+        "color": "Blue",
+        "length": "100ft",
+        "price": 26.99,
+        "image": "https://m.media-amazon.com/images/I/51nyGptTPOL.jpg",
+        "inStock": true,
+        "warehouseQty": 720,
+        "warehouseLocation": "Aisle 4 / Bay 14, Overflow / Bay 5, Overflow / Bay 9"
+      },
+      {
+        "asin": "B0HF6XR2PX",
+        "sku": "850060447907",
+        "color": "Standard",
+        "length": "100ft",
+        "price": 26.99,
+        "image": "",
+        "inStock": true,
+        "warehouseQty": 400,
+        "warehouseLocation": "Overflow / Bay 18"
+      },
+      {
+        "asin": "B0H5VSJPGF",
+        "sku": "850060447815",
+        "color": "Standard",
+        "length": "150ft",
+        "price": 36.99,
+        "image": "https://m.media-amazon.com/images/I/518lRrmKvIL.jpg",
+        "inStock": true,
+        "warehouseQty": 368,
+        "warehouseLocation": "Aisle 1 / Bay 13"
+      },
+      {
+        "asin": "B0H5VX5HFV",
+        "sku": "850060447808",
+        "color": "Standard",
+        "length": "150ft",
+        "price": 36.99,
+        "image": "https://m.media-amazon.com/images/I/51nbC+u7vxL.jpg",
+        "inStock": true,
+        "warehouseQty": 304,
+        "warehouseLocation": "Aisle 2 / Bay 21"
+      },
+      {
+        "asin": "B0H5VNMMJX",
+        "sku": "850060447792",
+        "color": "Standard",
+        "length": "150ft",
+        "price": 36.99,
+        "image": "https://m.media-amazon.com/images/I/816Jqp2NloL._SL1500_.jpg",
+        "inStock": true,
+        "warehouseQty": 400,
+        "warehouseLocation": "Aisle 7 / Bay 12"
+      },
+      {
+        "asin": "B0HF759PLL",
+        "sku": "850060447914",
+        "color": "Standard",
+        "length": "150ft",
+        "price": 36.99,
+        "image": "",
+        "inStock": true,
+        "warehouseQty": 432,
+        "warehouseLocation": "Overflow / Bay 20"
+      },
+      {
+        "asin": "B0H5VPXCML",
+        "sku": "850060447822",
+        "color": "Standard",
+        "length": "150ft",
+        "price": 36.99,
+        "image": "https://m.media-amazon.com/images/I/51ZwKu9tjJL.jpg",
+        "inStock": true,
+        "warehouseQty": 416,
+        "warehouseLocation": "Aisle 1 / Bay 25"
+      },
+      {
+        "asin": "B0H4XH1TRG",
+        "sku": "850060447730",
+        "color": "Standard",
+        "length": "150ft",
+        "price": 36.99,
+        "image": "https://m.media-amazon.com/images/I/51JKCSBEL3L.jpg",
+        "inStock": true,
+        "warehouseQty": 416,
+        "warehouseLocation": "Aisle 2 / Bay 25"
+      },
+      {
+        "asin": "B0F2WXBJTD",
+        "sku": "850060447464",
+        "color": "White",
+        "length": "25ft",
+        "price": 10.99,
+        "image": "https://m.media-amazon.com/images/I/511MCRSgk2L.jpg",
+        "inStock": true,
+        "warehouseQty": 50,
+        "warehouseLocation": "Aisle 2 / Bay 16"
+      },
+      {
+        "asin": "B0DWLG5P38",
+        "sku": "850060447501",
+        "color": "Black",
+        "length": "25ft",
+        "price": 10.99,
+        "image": "https://m.media-amazon.com/images/I/51syRKBUEKL.jpg",
+        "inStock": true,
+        "warehouseQty": 250,
+        "warehouseLocation": "Aisle 1 / Bay 14"
+      },
+      {
+        "asin": "B0H5VWH7T7",
+        "sku": "850060447761",
+        "color": "Standard",
+        "length": "25ft",
+        "price": 10.99,
+        "image": "https://m.media-amazon.com/images/I/51ns-fIsPGL.jpg",
+        "inStock": true,
+        "warehouseQty": 650,
+        "warehouseLocation": "Aisle 2 / Bay 16"
+      },
+      {
+        "asin": "B0H4X74SGC",
+        "sku": "850060447693",
+        "color": "Standard",
+        "length": "25ft",
+        "price": 10.99,
+        "image": "https://m.media-amazon.com/images/I/51okZme0QSL.jpg",
+        "inStock": true,
+        "warehouseQty": 1600,
+        "warehouseLocation": "Aisle 2 / Bay 16, Aisle 4 / Bay 27"
+      },
+      {
+        "asin": "B0CX8RQ4G8",
+        "sku": "B8-GNVF-Q9VJ",
+        "color": "Blue",
+        "length": "25ft",
+        "price": 10.99,
+        "image": "https://m.media-amazon.com/images/I/51QIFNxeduL.jpg",
+        "inStock": true,
+        "warehouseQty": 200,
+        "warehouseLocation": "Aisle 4 / Bay 24"
+      },
+      {
+        "asin": "B0HF6XCL89",
+        "sku": "850060447884",
+        "color": "Standard",
+        "length": "25ft",
+        "price": 10.99,
+        "image": "",
+        "inStock": true,
+        "warehouseQty": 750,
+        "warehouseLocation": "Overflow / Bay 16"
+      },
+      {
+        "asin": "B0CX91HDRC",
+        "sku": "3T-1LIX-XN4O",
+        "color": "Blue",
+        "length": "50ft",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/51FSfhCjW5L.jpg",
+        "inStock": true,
+        "warehouseQty": 800,
+        "warehouseLocation": "Overflow / Bay 22"
+      },
+      {
+        "asin": "B0HF6RD5RT",
+        "sku": "850060447891",
+        "color": "Standard",
+        "length": "50ft",
+        "price": 17.99,
+        "image": "",
+        "inStock": true,
+        "warehouseQty": 600,
+        "warehouseLocation": "Overflow / Bay 19"
+      },
+      {
+        "asin": "B0GX5BSZR5",
+        "sku": "850060447709",
+        "color": "Yellow",
+        "length": "50ft",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/51R0jlg1RoL.jpg",
+        "inStock": true,
+        "warehouseQty": 1280,
+        "warehouseLocation": "Aisle 3 / Bay 18, Overflow / Bay 8"
+      },
+      {
+        "asin": "B0H5VDM44G",
+        "sku": "850060447846",
+        "color": "Standard",
+        "length": "5ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/51SUut1KNjL.jpg",
+        "inStock": true,
+        "warehouseQty": 600,
+        "warehouseLocation": "Aisle 1 / Bay 21"
+      },
+      {
+        "asin": "B0H5VQHN6D",
+        "sku": "850060447839",
+        "color": "Standard",
+        "length": "5ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/51SnBABNykL.jpg",
+        "inStock": true,
+        "warehouseQty": 800,
+        "warehouseLocation": "Aisle 6 / Bay 1"
+      },
+      {
+        "asin": "B0H5W2GMQB",
+        "sku": "850060447747",
+        "color": "Standard",
+        "length": "5ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/71s3YAGilPL._SL1500_.jpg",
+        "inStock": true,
+        "warehouseQty": 800,
+        "warehouseLocation": "Aisle 6 / Bay 1"
+      },
+      {
+        "asin": "B0HF6K5PG4",
+        "sku": "850060447860",
+        "color": "Red",
+        "length": "5ft",
+        "price": 8.99,
+        "image": "",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      },
+      {
+        "asin": "B0H5VKY5Y3",
+        "sku": "850060447853",
+        "color": "Standard",
+        "length": "5ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/713hnDAPb+L._SL1500_.jpg",
+        "inStock": true,
+        "warehouseQty": 600,
+        "warehouseLocation": "Aisle 1 / Bay 21"
+      },
+      {
+        "asin": "B0H4XJ4WDQ",
+        "sku": "850060447723",
+        "color": "Standard",
+        "length": "5ft",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/71DIIiIY8rL._SL1500_.jpg",
+        "inStock": true,
+        "warehouseQty": 600,
+        "warehouseLocation": "Aisle 6 / Bay 1"
+      },
+      {
+        "asin": "B0F2X7TPL4",
+        "sku": "850060447495",
+        "color": "Black",
+        "length": "10ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/51PrvFeiJqL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": "Aisle 1 / Bay 22"
+      },
+      {
+        "asin": "B0F2XLG3LL",
+        "sku": "850060447440",
+        "color": "Blue",
+        "length": "10ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/51jI4xkEnJL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": "Aisle 1 / Bay 22"
+      },
+      {
+        "asin": "B0H5VV8GYC",
+        "sku": "850060447754",
+        "color": "Standard",
+        "length": "10ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/81w-dWJz5lL._SL1500_.jpg",
+        "inStock": true,
+        "warehouseQty": 1600,
+        "warehouseLocation": "Aisle 2 / Bay 22"
+      },
+      {
+        "asin": "B0HF711T3T",
+        "sku": "850060447877",
+        "color": "Standard",
+        "length": "10ft",
+        "price": 9.99,
+        "image": "",
+        "inStock": true,
+        "warehouseQty": 2280,
+        "warehouseLocation": "Overflow / Bay 17"
+      },
+      {
+        "asin": "B0F2X9KLCN",
+        "sku": "850060447457",
+        "color": "White",
+        "length": "10ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/51zFPCPMhkL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": "Aisle 1 / Bay 22"
+      },
+      {
+        "asin": "B0H4XR22DB",
+        "sku": "850060447686",
+        "color": "Standard",
+        "length": "10ft",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/51kVdwkKizL.jpg",
+        "inStock": true,
+        "warehouseQty": 2200,
+        "warehouseLocation": "Aisle 1 / Bay 25"
+      },
+      {
+        "asin": "B0F2WXN7HW",
+        "sku": "850060447471",
+        "color": "White",
+        "length": "50ft",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/5151cW8VIxL.jpg",
+        "inStock": true,
+        "warehouseQty": 880,
+        "warehouseLocation": "Overflow / Bay 6, Overflow / Bay 8"
+      }
+    ]
+  },
+  {
+    "id": "B0D2JNCX2Q",
+    "slug": "avesview-cat6-indoor-1000ft-ethernet-cable-shielded-solid-foiled-bare-copper-sft",
+    "title": "AvesView CAT6 Indoor 1000ft Ethernet Cable Shielded Solid Foiled Bare Copper (SFTP) 10Gbps CAT 6 High-Speed Internet Cable 23AWG 10Gbps 550MHz Bandwidth Bulk Spool",
+    "category": "cat6-shielded-bulk",
+    "description": "CAT6 Indoor 1000ft Ethernet Cable Shielded Solid Foiled Bare Copper (SFTP) 10Gbps CAT 6 High-Speed Internet Cable 23AWG 10Gbps 550MHz Bandwidth Bulk Spool",
+    "variants": [
+      {
+        "asin": "B0CXHYMTWW",
+        "sku": "amzn.gr.6X-N1MH-PVPX-yvCXs4aKfJ7mdAR8-LN",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 199.99,
+        "image": "https://m.media-amazon.com/images/I/41UcnM0W8nL.jpg",
+        "inStock": true,
+        "warehouseQty": 2,
+        "warehouseLocation": "Aisle 1 / Bay 23"
+      },
+      {
+        "asin": "B0CXHJFZ5T",
+        "sku": "CN-5OM4-VGDO",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 179.99,
+        "image": "https://m.media-amazon.com/images/I/41DojEJRO2L.jpg",
+        "inStock": true,
+        "warehouseQty": 12,
+        "warehouseLocation": "Aisle 1 / Bay 23"
+      },
+      {
+        "asin": "B0CXHHZVYT",
+        "sku": "KV-66PC-P02C",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 99.99,
+        "image": "https://m.media-amazon.com/images/I/41DojEJRO2L.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": "Aisle 1 / Bay 23"
+      },
+      {
+        "asin": "B0CXHRNWBX",
+        "sku": "8A-Q4TR-PB3F",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 189.99,
+        "image": "https://m.media-amazon.com/images/I/51cI5V6+i7L.jpg",
+        "inStock": true,
+        "warehouseQty": 67,
+        "warehouseLocation": "Aisle 1 / Bay 15, Aisle 7 / Bay 18"
+      },
+      {
+        "asin": "B0CXHFP4XR",
+        "sku": "amzn.gr.3H-NDY8-T5WV-mXm6-5VmDn5YCM7s-LN",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 199.99,
+        "image": "https://m.media-amazon.com/images/I/51dgbJj6-5L.jpg",
+        "inStock": true,
+        "warehouseQty": 189,
+        "warehouseLocation": "Aisle 1 / Bay 15, Aisle 3 / Bay 10, Aisle 4 / Bay 24, Aisle 5 / Bay 7, Aisle 5 / Bay 9"
+      }
+    ]
+  },
+  {
+    "id": "B0GBT8KD9W",
+    "slug": "avesview-cat6-indoor-1000ft-shielded-ethernet-cable-easy-pull-box-10gbps-cat-6-h",
+    "title": "AvesView CAT6 Indoor 1000ft Shielded Ethernet Cable Easy Pull Box 10Gbps Cat 6 High-Speed Internet Cable Foiled Twisted Pair (FTP) Copper Clad Aluminum (CCA) 23AWG 550MHz",
+    "category": "cat6-shielded-bulk",
+    "description": "CAT6 Indoor 1000ft Shielded Ethernet Cable Easy Pull Box 10Gbps Cat 6 High-Speed Internet Cable Foiled Twisted Pair (FTP) Copper Clad Aluminum (CCA) 23AWG 550MHz",
+    "variants": [
+      {
+        "asin": "B0G693G3DL",
+        "sku": "850060447563",
+        "color": "Black",
+        "length": "1000ft",
+        "price": 119,
+        "image": "https://m.media-amazon.com/images/I/513E5Uvwl-L.jpg",
+        "inStock": true,
+        "warehouseQty": 96,
+        "warehouseLocation": "Aisle 3 / Bay 16, Aisle 5 / Bay 16"
+      },
+      {
+        "asin": "B0CYPRF947",
+        "sku": "GK-6G01-7SB8",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 119,
+        "image": "https://m.media-amazon.com/images/I/51Zr+snxRWL.jpg",
+        "inStock": true,
+        "warehouseQty": 144,
+        "warehouseLocation": "Aisle 3 / Bay 11, Aisle 6 / Bay 3, Aisle 6 / Bay 6"
+      },
+      {
+        "asin": "B0HF2VNQWQ",
+        "sku": "850060447938",
+        "color": "Standard",
+        "length": "1000ft",
+        "price": 119,
+        "image": "",
+        "inStock": true,
+        "warehouseQty": 144,
+        "warehouseLocation": "Overflow / Bay 22, Overflow / Bay 23, Overflow / Bay 25"
+      },
+      {
+        "asin": "B0GX52V7Q8",
+        "sku": "850060447631",
+        "color": "Green",
+        "length": "1000ft",
+        "price": 119,
+        "image": "https://m.media-amazon.com/images/I/515J-uB1HgL.jpg",
+        "inStock": true,
+        "warehouseQty": 96,
+        "warehouseLocation": "Aisle 3 / Bay 17, Aisle 3 / Bay 24"
+      },
+      {
+        "asin": "B0HF32V1QG",
+        "sku": "850060447921",
+        "color": "Standard",
+        "length": "1000ft",
+        "price": 119,
+        "image": "",
+        "inStock": true,
+        "warehouseQty": 144,
+        "warehouseLocation": "Overflow / Bay 26, Overflow / Bay 27"
+      },
+      {
+        "asin": "B0G69ZS7N3",
+        "sku": "850060447570",
+        "color": "White",
+        "length": "1000ft",
+        "price": 119,
+        "image": "https://m.media-amazon.com/images/I/41t1G0d++aL.jpg",
+        "inStock": true,
+        "warehouseQty": 192,
+        "warehouseLocation": "Aisle 3 / Bay 23, Aisle 3 / Bay 25, Aisle 3 / Bay 26, Aisle 4 / Bay 25, Aisle 4 / Bay 26"
+      },
+      {
+        "asin": "B0G6BKSTB9",
+        "sku": "850060447587",
+        "color": "Yellow",
+        "length": "1000ft",
+        "price": 119,
+        "image": "https://m.media-amazon.com/images/I/51pWw8EAp-L.jpg",
+        "inStock": true,
+        "warehouseQty": 57,
+        "warehouseLocation": "Aisle 1 / Bay 23, Aisle 5 / Bay 6"
+      }
+    ]
+  },
+  {
+    "id": "B0CYNRR533",
+    "slug": "avesview-cat6-keystone-jacks-slim-profile-rj45-connectors-25-pack-utp-modular-et",
+    "title": "AvesView Cat6 Keystone Jacks Slim Profile RJ45 Connectors 25-Pack UTP Modular Ethernet Jack Insert 90-Degree for Ethernet Cable Use, Punch Down Keystone Jack Adapter White",
+    "category": "rj45-connectors",
+    "description": "Cat6 Keystone Jacks Slim Profile RJ45 Connectors 25-Pack UTP Modular Ethernet Jack Insert 90-Degree for Ethernet Cable Use, Punch Down Keystone Jack Adapter White",
+    "variants": [
+      {
+        "asin": "B0CYNRR533",
+        "sku": "NU-QXN4-3C2X",
+        "color": "Standard",
+        "length": null,
+        "price": 23.99,
+        "image": "https://m.media-amazon.com/images/I/41bdeSoVuyL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      }
+    ]
+  },
+  {
+    "id": "B0GZFVGTZ2",
+    "slug": "avesview-plenum-cat-6-ethernet-cable-1000ft-indoor-easy-pull-box-10gbps-premium-",
+    "title": "AvesView Plenum CAT 6 Ethernet Cable 1000ft Indoor Easy Pull Box 10Gbps Premium Quality CMP Bulk CAT6 Cable 1000 ft Shielded Copper Clad Aluminum (CCA) 23AWG 550MHz 1000FT CAT 6 Cable",
+    "category": "cat6-plenum",
+    "description": "Plenum CAT 6 Ethernet Cable 1000ft Indoor Easy Pull Box 10Gbps Premium Quality CMP Bulk CAT6 Cable 1000 ft Shielded Copper Clad Aluminum (CCA) 23AWG 550MHz 1000FT CAT 6 Cable",
+    "variants": [
+      {
+        "asin": "B0GHN9RPW7",
+        "sku": "850060447594",
+        "color": "Black",
+        "length": "1000ft",
+        "price": 139.99,
+        "image": "https://m.media-amazon.com/images/I/51cQ79cVYzL.jpg",
+        "inStock": true,
+        "warehouseQty": 88,
+        "warehouseLocation": "Aisle 3 / Bay 14, Aisle 3 / Bay 3, Aisle 7 / Bay 17"
+      },
+      {
+        "asin": "B0DWVPYD67",
+        "sku": "AV-C6EFCP-1000",
+        "color": "Blue",
+        "length": "1000ft",
+        "price": 139.99,
+        "image": "https://m.media-amazon.com/images/I/51gVtN3qfYL.jpg",
+        "inStock": true,
+        "warehouseQty": 180,
+        "warehouseLocation": "Aisle 1 / Bay 19, Aisle 2 / Bay 8, Aisle 4 / Bay 10, Aisle 5 / Bay 8"
+      },
+      {
+        "asin": "B0GX5DL6ZC",
+        "sku": "850060447655",
+        "color": "White",
+        "length": "1000ft",
+        "price": 139.99,
+        "image": "https://m.media-amazon.com/images/I/41YB09t38LL.jpg",
+        "inStock": true,
+        "warehouseQty": 72,
+        "warehouseLocation": "Aisle 2 / Bay 15, Aisle 6 / Bay 4"
+      },
+      {
+        "asin": "B0GX56JZHZ",
+        "sku": "850060447679",
+        "color": "Yellow",
+        "length": "1000ft",
+        "price": 139.99,
+        "image": "https://m.media-amazon.com/images/I/51wqjj7VvaL.jpg",
+        "inStock": true,
+        "warehouseQty": 144,
+        "warehouseLocation": "Aisle 1 / Bay 24, Aisle 3 / Bay 22, Aisle 5 / Bay 13"
+      },
+      {
+        "asin": "B0GX5RXLFM",
+        "sku": "850060447662",
+        "color": "Green",
+        "length": "1000ft",
+        "price": 139.99,
+        "image": "https://m.media-amazon.com/images/I/51cf8MJDMHL.jpg",
+        "inStock": true,
+        "warehouseQty": 120,
+        "warehouseLocation": "Aisle 3 / Bay 13, Aisle 4 / Bay 11, Aisle 4 / Bay 12, Aisle 5 / Bay 3"
+      }
+    ]
+  },
+  {
+    "id": "B0CXHTWV4D",
+    "slug": "avesview-rj45-category-6-cable-connector-boots-soft-plastic-ethernet-network-str",
+    "title": "AvesView RJ45 Category 6 Cable Connector Boots Soft Plastic Ethernet Network Strain Relief Boots Cable Connector Plug Cover CAT5 CAT5E CAT6 CAT6E 100-Pack",
+    "category": "accessories",
+    "description": "RJ45 Category 6 Cable Connector Boots Soft Plastic Ethernet Network Strain Relief Boots Cable Connector Plug Cover CAT5 CAT5E CAT6 CAT6E 100-Pack",
+    "variants": [
+      {
+        "asin": "B0CXHTWV4D",
+        "sku": "E5-F3UK-0KMG",
+        "color": "Blue",
+        "length": null,
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/51gSgJrvShL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      }
+    ]
+  },
+  {
+    "id": "B0CYP78L35",
+    "slug": "avesview-rj45-crimping-tool-pass-through-ethernet-wire-cutter-crimper-for-cat7-c",
+    "title": "AvesView RJ45 Crimping Tool Pass Through, Ethernet Wire Cutter Crimper for Cat7 Cat6A Cat6 Cat5E Cat5",
+    "category": "rj45-connectors",
+    "description": "RJ45 Crimping Tool Pass Through, Ethernet Wire Cutter Crimper for Cat7 Cat6A Cat6 Cat5E Cat5",
+    "variants": [
+      {
+        "asin": "B0CYP78L35",
+        "sku": "HC-H9WQ-F4UI",
+        "color": "Blue",
+        "length": null,
+        "price": 19.99,
+        "image": "https://m.media-amazon.com/images/I/41NfQvkO3LL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      }
+    ]
+  },
+  {
+    "id": "B0CYP5YLB1",
+    "slug": "avesview-rj45-crimping-tool-pass-through-ethernet-wire-cutter-crimper-for-cat7-c",
+    "title": "AvesView RJ45 Crimping Tool Pass Through, Ethernet Wire Cutter Crimper for Cat7 Cat6A Cat6 Cat5E Cat5",
+    "category": "rj45-connectors",
+    "description": "RJ45 Crimping Tool Pass Through, Ethernet Wire Cutter Crimper for Cat7 Cat6A Cat6 Cat5E Cat5",
+    "variants": [
+      {
+        "asin": "B0CYP5YLB1",
+        "sku": "YR-OBB0-LQJ5",
+        "color": "Yellow",
+        "length": null,
+        "price": 19.99,
+        "image": "https://m.media-amazon.com/images/I/41HYy+t2JAL.jpg",
+        "inStock": false,
+        "warehouseQty": 0,
+        "warehouseLocation": ""
+      }
+    ]
+  }
+]

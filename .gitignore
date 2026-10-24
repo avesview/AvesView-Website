@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+.yarn
+
+# Build output
+.output
+.nuxt
+dist
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel
+.vercel

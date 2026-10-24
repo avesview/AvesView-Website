@@ -8,8 +8,8 @@
       <!-- Background image fills right ~60% -->
       <div class="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85"
-          alt="Ethernet cables"
+          src="/hero-bg.jpg"
+          alt="AvesView CAT6 cable boxes on a warehouse pallet"
           class="w-full h-full object-cover"
         />
         <!-- Left white fade so text is readable -->

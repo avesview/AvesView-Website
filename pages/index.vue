@@ -9,15 +9,14 @@
         <div class="max-w-3xl">
           <div class="inline-flex items-center gap-2 bg-brand-red/10 border border-brand-red/20 rounded-full px-3 py-1 mb-5">
             <span class="w-2 h-2 bg-brand-red rounded-full animate-pulse"></span>
-            <span class="text-brand-red text-xs sm:text-sm font-medium">B2B Wholesale — Apply for Pricing Access</span>
+            <span class="text-brand-red text-xs sm:text-sm font-medium">Wholesale Accounts — Apply Today</span>
           </div>
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-4 md:mb-6">
-            Private Label<br>
-            <span class="text-brand-red">Ethernet Cables</span><br>
-            at Wholesale Cost
+            Cat6 Cables Built<br>
+            <span class="text-brand-red">for the Trade.</span>
           </h1>
           <p class="text-base sm:text-lg md:text-xl text-brand-gray-300 mb-6 md:mb-8 leading-relaxed max-w-2xl">
-            AvesView manufactures Cat6 patch cables, shielded SFTP cable, plenum CMP cable, RJ45 connectors, and bulk cable for contractors, IT professionals, and system integrators.
+            Wholesale pricing on Cat6 patch cables, shielded SFTP, plenum CMP, RJ45 connectors, and bulk spools. Stocked in Los Angeles. Ready to ship.
           </p>
           <div class="flex flex-col sm:flex-row gap-3">
             <NuxtLink to="/products" class="btn-primary text-base px-6 py-3.5 text-center">
@@ -37,16 +36,7 @@
         </div>
       </div>
 
-      <!-- Hero image area — desktop only -->
-      <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-2/5">
-        <div class="h-full flex items-center justify-center p-12">
-          <img
-            src="https://m.media-amazon.com/images/I/51ncWDoAw0L.jpg"
-            alt="AvesView Cat6 Ethernet Cable"
-            class="max-h-80 object-contain rounded-2xl shadow-2xl opacity-90"
-          />
-        </div>
-      </div>
+
     </section>
 
     <!-- Trust bar -->

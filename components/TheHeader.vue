@@ -1,13 +1,13 @@
 <template>
-  <header class="bg-brand-black sticky top-0 z-50 shadow-lg">
+  <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-200">
     <!-- Top utility bar — desktop only -->
-    <div class="hidden md:block border-b border-brand-gray-800">
+    <div class="hidden md:block border-b border-gray-100">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-8">
-        <span class="text-brand-gray-400 text-xs">B2B Wholesale — Private Label Manufacturer</span>
-        <div class="flex items-center gap-4 text-xs text-brand-gray-400">
-          <a href="tel:+17025255000" class="hover:text-white transition-colors">702-525-5000</a>
+        <span class="text-gray-500 text-xs">B2B Wholesale — Cat6 Ethernet Cable Manufacturer</span>
+        <div class="flex items-center gap-4 text-xs text-gray-500">
+          <a href="tel:+17025255000" class="hover:text-brand-red transition-colors">702-525-5000</a>
           <span>|</span>
-          <a href="mailto:info@avesview.com" class="hover:text-white transition-colors">info@avesview.com</a>
+          <a href="mailto:info@avesview.com" class="hover:text-brand-red transition-colors">info@avesview.com</a>
         </div>
       </div>
     </div>
@@ -28,10 +28,10 @@
             v-model="searchQuery"
             type="text"
             placeholder="Search cables, connectors..."
-            class="w-full bg-brand-gray-900 border border-brand-gray-700 text-white placeholder-brand-gray-500 rounded-lg px-4 py-2 pr-10 text-sm focus:outline-none focus:border-brand-red transition-colors"
+            class="w-full bg-gray-50 border border-gray-300 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-2 pr-10 text-sm focus:outline-none focus:border-brand-red transition-colors"
             @keyup.enter="doSearch"
           />
-          <button @click="doSearch" class="absolute right-3 top-1/2 -translate-y-1/2 text-brand-gray-400 hover:text-brand-red transition-colors">
+          <button @click="doSearch" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-brand-red transition-colors">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
@@ -41,7 +41,7 @@
         <!-- Desktop right actions -->
         <div class="hidden md:flex items-center gap-4 flex-shrink-0">
           <!-- Cart -->
-          <NuxtLink to="/cart" class="relative text-brand-gray-300 hover:text-white transition-colors">
+          <NuxtLink to="/cart" class="relative text-gray-500 hover:text-brand-red transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-4H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
             </svg>
@@ -51,7 +51,7 @@
           <!-- Auth -->
           <template v-if="user">
             <div class="relative group">
-              <button class="flex items-center gap-2 text-brand-gray-300 hover:text-white transition-colors text-sm">
+              <button class="flex items-center gap-2 text-gray-600 hover:text-brand-red transition-colors text-sm">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
                 Account
               </button>
@@ -65,13 +65,13 @@
             </div>
           </template>
           <template v-else>
-            <NuxtLink to="/login" class="text-brand-gray-300 hover:text-white text-sm transition-colors">Sign In</NuxtLink>
+            <NuxtLink to="/login" class="text-gray-600 hover:text-brand-red text-sm transition-colors font-medium">Sign In</NuxtLink>
             <NuxtLink to="/register" class="btn-primary text-sm py-2 px-4">Apply for Account</NuxtLink>
           </template>
         </div>
 
         <!-- Mobile: cart icon only (hamburger is in bottom bar) -->
-        <NuxtLink to="/cart" class="md:hidden relative text-brand-gray-300 flex-shrink-0">
+        <NuxtLink to="/cart" class="md:hidden relative text-gray-500 flex-shrink-0">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-4H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
           </svg>
@@ -82,15 +82,15 @@
     </div>
 
     <!-- Desktop category nav bar -->
-    <div class="hidden md:block border-t border-brand-gray-800">
+    <div class="hidden md:block border-t border-gray-100">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex items-center gap-8 h-10 text-sm">
-          <NuxtLink to="/products" class="nav-link font-medium">All Products</NuxtLink>
-          <NuxtLink to="/products?category=cat6-shielded" class="nav-link">Cat6 Shielded (SFTP)</NuxtLink>
-          <NuxtLink to="/products?category=cat6-plenum" class="nav-link">Cat6 Plenum (CMP)</NuxtLink>
-          <NuxtLink to="/products?category=patch-cables" class="nav-link">Patch Cables</NuxtLink>
-          <NuxtLink to="/products?category=rj45-connectors" class="nav-link">RJ45 Connectors</NuxtLink>
-          <NuxtLink to="/products?category=multi-packs" class="nav-link">Multi-Packs</NuxtLink>
+          <NuxtLink to="/products" class="text-gray-700 hover:text-brand-red font-semibold transition-colors">All Products</NuxtLink>
+          <NuxtLink to="/products?category=cat6-shielded" class="text-gray-600 hover:text-brand-red transition-colors">Cat6 Shielded (SFTP)</NuxtLink>
+          <NuxtLink to="/products?category=cat6-plenum" class="text-gray-600 hover:text-brand-red transition-colors">Cat6 Plenum (CMP)</NuxtLink>
+          <NuxtLink to="/products?category=patch-cables" class="text-gray-600 hover:text-brand-red transition-colors">Patch Cables</NuxtLink>
+          <NuxtLink to="/products?category=rj45-connectors" class="text-gray-600 hover:text-brand-red transition-colors">RJ45 Connectors</NuxtLink>
+          <NuxtLink to="/products?category=multi-packs" class="text-gray-600 hover:text-brand-red transition-colors">Multi-Packs</NuxtLink>
         </nav>
       </div>
     </div>
@@ -102,18 +102,18 @@
       <div v-if="mobileOpen" class="md:hidden fixed inset-0 z-[60] bg-black/70" @click="mobileOpen = false"></div>
     </Transition>
     <Transition name="slide-left">
-      <div v-if="mobileOpen" class="md:hidden fixed top-0 left-0 bottom-0 z-[70] w-72 bg-brand-black shadow-2xl flex flex-col overflow-y-auto">
+      <div v-if="mobileOpen" class="md:hidden fixed top-0 left-0 bottom-0 z-[70] w-72 bg-white shadow-2xl flex flex-col overflow-y-auto">
         <!-- Menu header -->
-        <div class="flex items-center justify-between px-5 py-4 border-b border-brand-gray-800">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
           <img src="/logo.jpg" alt="AvesView" class="h-8 object-contain" />
-          <button @click="mobileOpen = false" class="text-brand-gray-400 hover:text-white">
+          <button @click="mobileOpen = false" class="text-gray-400 hover:text-gray-800">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
 
         <!-- Nav links -->
         <nav class="flex flex-col py-4 px-3 gap-1">
-          <p class="text-brand-gray-500 text-xs font-semibold uppercase tracking-wider px-3 mb-2">Products</p>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-2">Products</p>
           <NuxtLink to="/products" class="mobile-nav-link" @click="mobileOpen = false">All Products</NuxtLink>
           <NuxtLink to="/products?category=cat6-shielded" class="mobile-nav-link" @click="mobileOpen = false">Cat6 Shielded (SFTP)</NuxtLink>
           <NuxtLink to="/products?category=cat6-plenum" class="mobile-nav-link" @click="mobileOpen = false">Cat6 Plenum (CMP)</NuxtLink>
@@ -123,13 +123,13 @@
         </nav>
 
         <!-- Auth section -->
-        <div class="border-t border-brand-gray-800 px-3 py-4 flex flex-col gap-1">
-          <p class="text-brand-gray-500 text-xs font-semibold uppercase tracking-wider px-3 mb-2">Account</p>
+        <div class="border-t border-gray-100 px-3 py-4 flex flex-col gap-1">
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-2">Account</p>
           <template v-if="user">
             <NuxtLink to="/account" class="mobile-nav-link" @click="mobileOpen = false">My Account</NuxtLink>
             <NuxtLink to="/account/orders" class="mobile-nav-link" @click="mobileOpen = false">My Orders</NuxtLink>
             <NuxtLink v-if="isAdmin" to="/admin" class="mobile-nav-link" @click="mobileOpen = false">Admin Panel</NuxtLink>
-            <button @click="logout" class="text-left text-red-400 py-2.5 px-3 text-sm rounded hover:bg-brand-gray-800">Sign Out</button>
+            <button @click="logout" class="text-left text-red-500 py-2.5 px-3 text-sm rounded hover:bg-red-50">Sign Out</button>
           </template>
           <template v-else>
             <NuxtLink to="/login" class="mobile-nav-link" @click="mobileOpen = false">Sign In</NuxtLink>
@@ -137,18 +137,18 @@
         </div>
 
         <!-- Contact -->
-        <div class="mt-auto border-t border-brand-gray-800 px-5 py-4">
-          <a href="tel:+17025255000" class="text-brand-gray-400 text-sm block mb-1 hover:text-white">📞 702-525-5000</a>
-          <a href="mailto:info@avesview.com" class="text-brand-gray-400 text-sm hover:text-white">✉️ info@avesview.com</a>
+        <div class="mt-auto border-t border-gray-100 px-5 py-4">
+          <a href="tel:+17025255000" class="text-gray-500 text-sm block mb-1 hover:text-brand-red">📞 702-525-5000</a>
+          <a href="mailto:info@avesview.com" class="text-gray-500 text-sm hover:text-brand-red">✉️ info@avesview.com</a>
         </div>
       </div>
     </Transition>
   </Teleport>
 
   <!-- Mobile bottom sticky nav bar -->
-  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-brand-black border-t border-brand-gray-800 flex items-center px-4 py-2 gap-3" style="padding-bottom: max(8px, env(safe-area-inset-bottom));">
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 flex items-center px-4 py-2 gap-3" style="padding-bottom: max(8px, env(safe-area-inset-bottom));">
     <!-- Hamburger -->
-    <button @click="mobileOpen = !mobileOpen" class="flex flex-col items-center gap-0.5 text-brand-gray-400 hover:text-white flex-shrink-0 px-2">
+    <button @click="mobileOpen = !mobileOpen" class="flex flex-col items-center gap-0.5 text-gray-500 hover:text-brand-red flex-shrink-0 px-2">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
@@ -167,7 +167,7 @@
 
     <!-- Sign in (if not logged in) -->
     <template v-if="!user">
-      <NuxtLink to="/login" class="flex flex-col items-center gap-0.5 text-brand-gray-400 hover:text-white flex-shrink-0 px-2">
+      <NuxtLink to="/login" class="flex flex-col items-center gap-0.5 text-gray-500 hover:text-brand-red flex-shrink-0 px-2">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
         <span class="text-[10px]">Sign In</span>
       </NuxtLink>
@@ -213,7 +213,7 @@ watch(() => route.path, () => { mobileOpen.value = false })
 
 <style scoped>
 .mobile-nav-link {
-  @apply text-brand-gray-300 hover:text-white hover:bg-brand-gray-800 py-2.5 px-3 rounded text-sm block transition-colors;
+  @apply text-gray-700 hover:text-brand-red hover:bg-red-50 py-2.5 px-3 rounded text-sm block transition-colors;
 }
 .fade-enter-active, .fade-leave-active { transition: opacity 0.2s; }
 .fade-enter-from, .fade-leave-to { opacity: 0; }

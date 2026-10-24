@@ -18,7 +18,7 @@
 
         <!-- Logo -->
         <NuxtLink to="/" class="flex-shrink-0">
-          <img src="/logo.jpg" alt="AvesView" class="h-8 md:h-10 object-contain" @error="handleLogoError" />
+          <img src="/logo.jpg" alt="AvesView" class="h-7 md:h-8 object-contain" @error="handleLogoError" />
           <span v-if="logoError" class="text-white font-bold text-xl tracking-tight">Aves<span class="text-brand-red">View</span></span>
         </NuxtLink>
 
@@ -83,14 +83,44 @@
 
     <!-- Desktop category nav bar -->
     <div class="hidden md:block border-t border-gray-100">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav class="flex items-center gap-8 h-10 text-sm">
-          <NuxtLink to="/products" class="text-gray-700 hover:text-brand-red font-semibold transition-colors">All Products</NuxtLink>
-          <NuxtLink to="/products?category=cat6-shielded" class="text-gray-600 hover:text-brand-red transition-colors">Cat6 Shielded (SFTP)</NuxtLink>
-          <NuxtLink to="/products?category=cat6-plenum" class="text-gray-600 hover:text-brand-red transition-colors">Cat6 Plenum (CMP)</NuxtLink>
-          <NuxtLink to="/products?category=patch-cables" class="text-gray-600 hover:text-brand-red transition-colors">Patch Cables</NuxtLink>
-          <NuxtLink to="/products?category=rj45-connectors" class="text-gray-600 hover:text-brand-red transition-colors">RJ45 Connectors</NuxtLink>
-          <NuxtLink to="/products?category=multi-packs" class="text-gray-600 hover:text-brand-red transition-colors">Multi-Packs</NuxtLink>
+      <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
+        <nav class="flex items-center gap-10 h-12 text-sm">
+
+          <!-- Ethernet Cables -->
+          <div class="relative group h-full flex items-center">
+            <button class="flex items-center gap-1 text-gray-700 hover:text-brand-red font-semibold transition-colors">
+              Ethernet Cables
+              <svg class="w-3.5 h-3.5 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-1 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+              <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-1.5">
+                <NuxtLink to="/products?category=patch-cables" class="nav-dropdown-item">Patch Cables</NuxtLink>
+                <NuxtLink to="/products?category=bulk-cables" class="nav-dropdown-item">Bulk Cables</NuxtLink>
+                <NuxtLink to="/products?category=terminations" class="nav-dropdown-item">Terminations</NuxtLink>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sound and Security (no submenu) -->
+          <NuxtLink to="/products?category=sound-and-security" class="text-gray-600 hover:text-brand-red font-medium transition-colors">Sound and Security</NuxtLink>
+
+          <!-- Security Cameras -->
+          <div class="relative group h-full flex items-center">
+            <button class="flex items-center gap-1 text-gray-600 hover:text-brand-red font-medium transition-colors">
+              Security Cameras
+              <svg class="w-3.5 h-3.5 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-1 w-44 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+              <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-1.5">
+                <NuxtLink to="/products?category=cameras" class="nav-dropdown-item">Cameras</NuxtLink>
+                <NuxtLink to="/products?category=camera-accessories" class="nav-dropdown-item">Accessories</NuxtLink>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pallet Deals (no submenu) -->
+          <NuxtLink to="/products?category=pallet-deals" class="text-gray-600 hover:text-brand-red font-medium transition-colors">Pallet Deals</NuxtLink>
+
         </nav>
       </div>
     </div>
@@ -114,12 +144,15 @@
         <!-- Nav links -->
         <nav class="flex flex-col py-4 px-3 gap-1">
           <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-2">Products</p>
-          <NuxtLink to="/products" class="mobile-nav-link" @click="mobileOpen = false">All Products</NuxtLink>
-          <NuxtLink to="/products?category=cat6-shielded" class="mobile-nav-link" @click="mobileOpen = false">Cat6 Shielded (SFTP)</NuxtLink>
-          <NuxtLink to="/products?category=cat6-plenum" class="mobile-nav-link" @click="mobileOpen = false">Cat6 Plenum (CMP)</NuxtLink>
-          <NuxtLink to="/products?category=patch-cables" class="mobile-nav-link" @click="mobileOpen = false">Patch Cables</NuxtLink>
-          <NuxtLink to="/products?category=rj45-connectors" class="mobile-nav-link" @click="mobileOpen = false">RJ45 Connectors</NuxtLink>
-          <NuxtLink to="/products?category=multi-packs" class="mobile-nav-link" @click="mobileOpen = false">Multi-Packs</NuxtLink>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-1 mt-1">Ethernet Cables</p>
+          <NuxtLink to="/products?category=patch-cables" class="mobile-nav-link pl-5" @click="mobileOpen = false">Patch Cables</NuxtLink>
+          <NuxtLink to="/products?category=bulk-cables" class="mobile-nav-link pl-5" @click="mobileOpen = false">Bulk Cables</NuxtLink>
+          <NuxtLink to="/products?category=terminations" class="mobile-nav-link pl-5" @click="mobileOpen = false">Terminations</NuxtLink>
+          <NuxtLink to="/products?category=sound-and-security" class="mobile-nav-link" @click="mobileOpen = false">Sound and Security</NuxtLink>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-1 mt-2">Security Cameras</p>
+          <NuxtLink to="/products?category=cameras" class="mobile-nav-link pl-5" @click="mobileOpen = false">Cameras</NuxtLink>
+          <NuxtLink to="/products?category=camera-accessories" class="mobile-nav-link pl-5" @click="mobileOpen = false">Accessories</NuxtLink>
+          <NuxtLink to="/products?category=pallet-deals" class="mobile-nav-link" @click="mobileOpen = false">Pallet Deals</NuxtLink>
         </nav>
 
         <!-- Auth section -->
@@ -214,6 +247,9 @@ watch(() => route.path, () => { mobileOpen.value = false })
 <style scoped>
 .mobile-nav-link {
   @apply text-gray-700 hover:text-brand-red hover:bg-red-50 py-2.5 px-3 rounded text-sm block transition-colors;
+}
+.nav-dropdown-item {
+  @apply block px-4 py-2.5 text-sm text-gray-700 hover:bg-red-50 hover:text-brand-red transition-colors;
 }
 .fade-enter-active, .fade-leave-active { transition: opacity 0.2s; }
 .fade-enter-from, .fade-leave-to { opacity: 0; }

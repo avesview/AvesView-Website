@@ -37,19 +37,21 @@
         </div>
       </div>
 
-      <!-- Slide 2: Custom cables — text RIGHT -->
+      <!-- Slide 2: Custom cables — text RIGHT desktop / centered mobile -->
       <div
         class="absolute inset-0 transition-transform duration-700 ease-in-out"
         :style="{ transform: `translateX(${(1 - currentSlide) * 100}%)` }"
         style="background-image: url('/hero-slide2.webp'); background-size: cover; background-position: center 40%;"
       >
+        <!-- Dark overlay for readability on mobile -->
+        <div class="absolute inset-0 bg-black/50 md:bg-gradient-to-l md:from-black/10 md:via-black/30 md:to-black/60"></div>
         <div class="absolute inset-0 flex items-center">
-          <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 w-full flex justify-end">
+          <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 w-full flex justify-start md:justify-end">
             <div class="max-w-lg">
               <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Custom Cable Manufacturing</p>
-              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-2">Your cable.</h1>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-2">Your cable.</h1>
               <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-red leading-tight mb-5">Your specifications.</h2>
-              <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-7">
+              <p class="text-gray-200 text-sm sm:text-base leading-relaxed mb-7">
                 Tell us the cable type, length, connectors and quantity.<br>
                 Built around your requirements.
               </p>
@@ -57,7 +59,7 @@
                 <NuxtLink to="/register" class="inline-flex items-center gap-2 bg-brand-red text-white font-bold px-6 py-3.5 rounded text-sm hover:bg-red-700 transition-colors">
                   Request a Custom Cable
                 </NuxtLink>
-                <NuxtLink to="/contact" class="inline-flex items-center gap-2 bg-white border-2 border-gray-900 text-gray-900 font-bold px-6 py-3.5 rounded text-sm hover:bg-gray-900 hover:text-white transition-all duration-200">
+                <NuxtLink to="/contact" class="inline-flex items-center gap-2 bg-white border-2 border-white text-gray-900 font-bold px-6 py-3.5 rounded text-sm hover:bg-transparent hover:text-white transition-all duration-200">
                   Discuss Your Project
                 </NuxtLink>
               </div>

@@ -1,43 +1,43 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="hero-pattern min-h-[580px] flex items-center relative overflow-hidden">
+    <section class="hero-pattern min-h-[60vh] md:min-h-[580px] flex items-center relative overflow-hidden">
       <!-- Background grid pattern -->
       <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle, #CC0000 1px, transparent 1px); background-size: 32px 32px;"></div>
 
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div class="max-w-8xl mx-auto px-5 sm:px-6 lg:px-8 py-12 md:py-20 relative z-10 w-full">
         <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 bg-brand-red/10 border border-brand-red/20 rounded-full px-4 py-1.5 mb-6">
+          <div class="inline-flex items-center gap-2 bg-brand-red/10 border border-brand-red/20 rounded-full px-3 py-1 mb-5">
             <span class="w-2 h-2 bg-brand-red rounded-full animate-pulse"></span>
-            <span class="text-brand-red text-sm font-medium">B2B Wholesale — Apply for Pricing Access</span>
+            <span class="text-brand-red text-xs sm:text-sm font-medium">B2B Wholesale — Apply for Pricing Access</span>
           </div>
-          <h1 class="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-4 md:mb-6">
             Private Label<br>
             <span class="text-brand-red">Ethernet Cables</span><br>
             at Wholesale Cost
           </h1>
-          <p class="text-xl text-brand-gray-300 mb-8 leading-relaxed max-w-2xl">
+          <p class="text-base sm:text-lg md:text-xl text-brand-gray-300 mb-6 md:mb-8 leading-relaxed max-w-2xl">
             AvesView manufactures Cat6 patch cables, shielded SFTP cable, plenum CMP cable, RJ45 connectors, and bulk cable for contractors, IT professionals, and system integrators.
           </p>
-          <div class="flex flex-wrap gap-4">
-            <NuxtLink to="/products" class="btn-primary text-base px-8 py-4">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <NuxtLink to="/products" class="btn-primary text-base px-6 py-3.5 text-center">
               Browse Products
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </NuxtLink>
-            <NuxtLink to="/register" class="btn-secondary text-base px-8 py-4">
+            <NuxtLink to="/register" class="btn-secondary text-base px-6 py-3.5 text-center hidden sm:flex">
               Apply for Wholesale Account
             </NuxtLink>
           </div>
-          <div class="flex flex-wrap gap-8 mt-10 pt-8 border-t border-brand-gray-800">
+          <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 sm:gap-8 mt-8 pt-6 border-t border-brand-gray-800">
             <div v-for="stat in stats" :key="stat.label" class="text-center">
-              <div class="text-2xl font-black text-white">{{ stat.value }}</div>
-              <div class="text-sm text-brand-gray-400">{{ stat.label }}</div>
+              <div class="text-xl sm:text-2xl font-black text-white">{{ stat.value }}</div>
+              <div class="text-xs sm:text-sm text-brand-gray-400">{{ stat.label }}</div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Hero image area -->
+      <!-- Hero image area — desktop only -->
       <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-2/5">
         <div class="h-full flex items-center justify-center p-12">
           <img

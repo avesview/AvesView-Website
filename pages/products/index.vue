@@ -3,7 +3,7 @@
     <!-- Page header -->
     <div class="bg-brand-black py-10">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-black text-white">Product Catalog</h1>
+        <h1 class="text-3xl font-black text-white">{{ pageTitle }}</h1>
         <p class="text-brand-gray-400 mt-1">{{ filteredProducts.length }} products</p>
       </div>
     </div>
@@ -132,6 +132,24 @@ const { products, categories, getByCategory, searchProducts, getBasePrice } = us
 const search = ref('')
 const selectedCategory = ref(route.query.category || 'all')
 const filtersOpen = ref(false)
+
+const pageTitleMap = {
+  'all': 'Product Catalog',
+  'patch-cables': 'Patch Cables',
+  'bulk-cables': 'Bulk Ethernet Cable',
+  'cat6-shielded': 'Cat6 Shielded (SFTP)',
+  'cat6-shielded-bulk': 'Shielded Bulk Cable',
+  'cat6-plenum': 'Cat6 Plenum (CMP)',
+  'cat6-bulk': 'Bulk Cable',
+  'rj45-connectors': 'RJ45 Connectors',
+  'accessories': 'Accessories',
+  'cameras': 'Surveillance Cameras',
+  'camera-accessories': 'Camera Accessories',
+  'sound-and-security': 'Sound & Security',
+  'pallet-deals': 'Pallet Deals',
+}
+
+const pageTitle = computed(() => pageTitleMap[selectedCategory.value] || 'Product Catalog')
 const selectedColor = ref('')
 
 // Sync URL query param

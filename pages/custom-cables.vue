@@ -159,7 +159,7 @@ const steps = [
   },
   {
     title: 'Receive a Quote',
-    desc: 'We'll respond with pricing and lead time — typically within 24 hours.',
+    desc: "We'll respond with pricing and lead time — typically within 24 hours.",
   },
   {
     title: 'We Manufacture',

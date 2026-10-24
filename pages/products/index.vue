@@ -172,7 +172,10 @@ watch(() => route.query.category, (val) => {
 
 const availableColors = computed(() => {
   const colors = new Set()
-  products.forEach(p => p.variants.forEach(v => { if (v.color) colors.add(v.color) }))
+  const pool = selectedCategory.value && selectedCategory.value !== 'all'
+    ? products.filter(p => p.category === selectedCategory.value)
+    : products
+  pool.forEach(p => p.variants.forEach(v => { if (v.color) colors.add(v.color) }))
   return Array.from(colors).sort()
 })
 

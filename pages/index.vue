@@ -326,7 +326,7 @@ const shopCategories = [
     id: 'sound-and-security',
     label: 'Sound & Security Cable',
     desc: 'Multi-conductor cable for commercial installations.',
-    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&q=80',
+    image: '/category-speaker-cable.jpg',
   },
   {
     id: 'cameras',

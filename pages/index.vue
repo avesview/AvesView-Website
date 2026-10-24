@@ -6,7 +6,7 @@
     ════════════════════════════════════════════ -->
     <section
       class="relative"
-      style="height: 700px; background-color: #ededed; background-image: url('/hero-bg.webp'); background-repeat: no-repeat; background-size: auto 700px; background-position: right center;"
+      style="height: 700px; background-color: #f5f7f9; background-image: url('/hero-bg-wide.webp'); background-repeat: no-repeat; background-size: auto 700px; background-position: center center;"
     >
 
       <!-- Text overlay — same container as header, text aligns with logo -->

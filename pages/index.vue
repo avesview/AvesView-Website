@@ -234,7 +234,7 @@ function prevSlide() { currentSlide.value = (currentSlide.value + 1) % 2 === 0 ?
 function pauseSlider() { clearInterval(sliderTimer) }
 function resumeSlider() { sliderTimer = setInterval(nextSlide, 5000) }
 
-onMounted(() => { sliderTimer = setInterval(nextSlide, 5000) })
+onMounted(() => { sliderTimer = setInterval(nextSlide, 17000) })
 onUnmounted(() => clearInterval(sliderTimer))
 
 const shopCategories = [

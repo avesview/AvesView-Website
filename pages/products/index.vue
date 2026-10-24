@@ -39,7 +39,7 @@
               <label class="label">Category</label>
               <div class="space-y-1">
                 <button
-                  v-for="cat in categories"
+                  v-for="cat in contextCategories"
                   :key="cat.id"
                   @click="selectedCategory = cat.id"
                   class="w-full text-left px-3 py-2 rounded text-sm transition-colors"
@@ -132,6 +132,19 @@ const { products, categories, getByCategory, searchProducts, getBasePrice } = us
 const search = ref('')
 const selectedCategory = ref(route.query.category || 'all')
 const filtersOpen = ref(false)
+
+const cameraCategories = ['cameras', 'camera-accessories']
+const isCameraContext = computed(() => cameraCategories.includes(selectedCategory.value))
+
+const contextCategories = computed(() => {
+  if (isCameraContext.value) {
+    return [
+      { id: 'cameras', label: 'All Cameras' },
+      { id: 'camera-accessories', label: 'Camera Accessories' },
+    ]
+  }
+  return categories.filter(c => !cameraCategories.includes(c.id))
+})
 
 const pageTitleMap = {
   'all': 'Product Catalog',

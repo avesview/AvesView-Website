@@ -52,6 +52,24 @@
               </div>
             </div>
 
+            <!-- Camera Type filter (only on camera pages) -->
+            <div v-if="isCameraContext" class="mb-5">
+              <label class="label">Type</label>
+              <div class="space-y-1">
+                <button
+                  v-for="type in cameraTypes"
+                  :key="type.id"
+                  @click="selectedType = type.id"
+                  class="w-full text-left px-3 py-2 rounded text-sm transition-colors"
+                  :class="selectedType === type.id
+                    ? 'bg-brand-red text-white font-medium'
+                    : 'text-brand-gray-600 hover:bg-brand-gray-100'"
+                >
+                  {{ type.label }}
+                </button>
+              </div>
+            </div>
+
             <!-- Color -->
             <div class="mb-5">
               <label class="label">Color</label>
@@ -164,10 +182,20 @@ const pageTitleMap = {
 
 const pageTitle = computed(() => pageTitleMap[selectedCategory.value] || 'Product Catalog')
 const selectedColor = ref('')
+const selectedType = ref('')
+
+const cameraTypes = [
+  { id: '', label: 'All Types' },
+  { id: 'Bullet', label: 'Bullet Cameras' },
+  { id: 'Turret', label: 'Turret Cameras' },
+  { id: 'PTZ', label: 'PTZ Cameras' },
+  { id: 'Wide Angle', label: 'Wide Angle Cameras' },
+]
 
 // Sync URL query param
 watch(() => route.query.category, (val) => {
   selectedCategory.value = val || 'all'
+  selectedType.value = ''
 })
 
 const availableColors = computed(() => {
@@ -198,6 +226,11 @@ const filteredProducts = computed(() => {
         v.sku.toLowerCase().includes(q)
       )
     )
+  }
+
+  // Camera type filter
+  if (selectedType.value && isCameraContext.value) {
+    result = result.filter(p => p.title.includes(selectedType.value))
   }
 
   // Color filter

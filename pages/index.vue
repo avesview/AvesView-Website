@@ -11,9 +11,10 @@
         class="w-full h-full object-cover object-center"
       />
 
-      <!-- Text overlay — sits on the naturally blurred left side of the photo -->
-      <div class="absolute inset-0 flex items-center" style="padding-left: 5%; padding-right: 55%;">
-        <div>
+      <!-- Text overlay — same container as header, text aligns with logo -->
+      <div class="absolute inset-0 flex items-center">
+        <div class="max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 w-full">
+        <div class="max-w-lg">
           <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Bulk Cable &amp; Connectivity</p>
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-2">
             Built for the trade.
@@ -35,6 +36,7 @@
             </NuxtLink>
           </div>
           <p class="text-gray-500 text-xs mt-3">Smaller orders welcome.</p>
+        </div>
         </div>
       </div>
 

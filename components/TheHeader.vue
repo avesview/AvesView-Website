@@ -36,7 +36,7 @@
             v-model="searchQuery"
             type="text"
             placeholder="Search cables, products or SKU"
-            class="w-full bg-white border border-gray-300 text-gray-800 placeholder-gray-400 rounded-full px-4 pl-10 py-2.5 text-sm focus:outline-none focus:border-brand-red transition-colors"
+            class="w-full bg-gray-50 border border-gray-300 text-gray-800 placeholder-gray-400 rounded-md px-4 pl-10 py-2 text-sm focus:outline-none focus:border-brand-red transition-colors"
             @keyup.enter="doSearch"
           />
         </div>
@@ -86,7 +86,7 @@
     <!-- ── Desktop nav bar ── -->
     <div class="hidden md:block border-t border-gray-100">
       <div class="relative max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
-        <nav class="flex items-center justify-between h-12 text-sm w-full">
+        <nav class="flex items-center h-12 text-sm w-full gap-8">
 
           <!-- Ethernet Cables — Mega Menu -->
           <div class="relative group h-full flex items-center">
@@ -164,11 +164,14 @@
           <!-- Custom Cable Manufacturing -->
           <NuxtLink to="/custom-cables" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Custom Cable Manufacturing</NuxtLink>
 
-          <!-- Quick Order — right side -->
-          <NuxtLink to="/products" class="flex items-center gap-1.5 text-gray-700 hover:text-brand-red font-medium transition-colors">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-            Quick Order
-          </NuxtLink>
+          <!-- Separator + Quick Order pushed right -->
+          <div class="ml-auto flex items-center gap-4">
+            <span class="text-gray-300 text-lg">|</span>
+            <NuxtLink to="/products" class="flex items-center gap-1.5 text-gray-700 hover:text-brand-red font-medium transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              Quick Order
+            </NuxtLink>
+          </div>
 
         </nav>
       </div>

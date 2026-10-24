@@ -74,11 +74,16 @@
           </NuxtLink>
         </div>
 
-        <!-- Mobile: cart -->
-        <NuxtLink to="/cart" class="md:hidden relative text-gray-700 flex-shrink-0">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-4H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-          <span v-if="cartCount > 0" class="absolute -top-2 -right-2 bg-brand-red text-white text-xs rounded-full w-4 h-4 flex items-center justify-center font-bold">{{ cartCount }}</span>
-        </NuxtLink>
+        <!-- Mobile: cart + hamburger -->
+        <div class="md:hidden flex items-center gap-3 flex-shrink-0">
+          <NuxtLink to="/cart" class="relative text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-4H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            <span v-if="cartCount > 0" class="absolute -top-2 -right-2 bg-brand-red text-white text-xs rounded-full w-4 h-4 flex items-center justify-center font-bold">{{ cartCount }}</span>
+          </NuxtLink>
+          <button @click="mobileOpen = !mobileOpen" class="text-gray-700 hover:text-brand-red p-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
 
       </div>
     </div>
@@ -222,27 +227,7 @@
     </Transition>
   </Teleport>
 
-  <!-- Mobile bottom bar -->
-  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 flex items-center px-4 py-2 gap-3" style="padding-bottom: max(8px, env(safe-area-inset-bottom));">
-    <button @click="mobileOpen = !mobileOpen" class="flex flex-col items-center gap-0.5 text-gray-500 hover:text-brand-red flex-shrink-0 px-2">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      <span class="text-[10px]">Menu</span>
-    </button>
-    <div class="flex-1">
-      <template v-if="user">
-        <NuxtLink to="/account" class="btn-primary w-full text-center text-sm py-2.5">My Account</NuxtLink>
-      </template>
-      <template v-else>
-        <NuxtLink to="/register" class="btn-primary w-full text-center text-sm py-2.5">Apply for Wholesale Account</NuxtLink>
-      </template>
-    </div>
-    <template v-if="!user">
-      <NuxtLink to="/login" class="flex flex-col items-center gap-0.5 text-gray-500 hover:text-brand-red flex-shrink-0 px-2">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-        <span class="text-[10px]">Sign In</span>
-      </NuxtLink>
-    </template>
-  </div>
+
 </template>
 
 <script setup>

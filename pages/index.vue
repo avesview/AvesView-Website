@@ -4,13 +4,10 @@
     <!-- ═══════════════════════════════════════════
          HERO
     ════════════════════════════════════════════ -->
-    <section class="relative bg-gray-100" style="height: 620px; overflow: hidden;">
-      <img
-        src="/hero-bg.webp"
-        alt="AvesView CAT6 cable boxes on a warehouse pallet"
-        class="w-full h-full object-cover"
-        style="object-position: 35% 85%;"
-      />
+    <section
+      class="relative"
+      style="height: 700px; background-color: #ededed; background-image: url('/hero-bg.webp'); background-repeat: no-repeat; background-size: auto 700px; background-position: right center;"
+    >
 
       <!-- Text overlay — same container as header, text aligns with logo -->
       <div class="absolute inset-0 flex items-center">

@@ -314,7 +314,7 @@ const shopCategories = [
     id: 'patch-cables',
     label: 'Patch Cables',
     desc: 'Cat6 patch cables in multiple lengths and colors.',
-    image: 'https://m.media-amazon.com/images/I/51ncWDoAw0L.jpg',
+    image: '/category-patch-cables.jpg',
   },
   {
     id: 'bulk-cables',

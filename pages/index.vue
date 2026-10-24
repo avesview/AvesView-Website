@@ -4,7 +4,7 @@
     <!-- ═══════════════════════════════════════════
          HERO
     ════════════════════════════════════════════ -->
-    <section class="relative bg-gray-100" style="max-height: 700px; overflow: hidden;">
+    <section class="relative bg-gray-100">
       <img
         src="/hero-bg.webp"
         alt="AvesView CAT6 cable boxes on a warehouse pallet"

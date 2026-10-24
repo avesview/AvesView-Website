@@ -8,12 +8,12 @@
       <!-- Background image fills right ~60% -->
       <div class="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80"
-          alt="Warehouse"
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85"
+          alt="Ethernet cables"
           class="w-full h-full object-cover"
         />
         <!-- Left white fade so text is readable -->
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #f9fafb 38%, rgba(249,250,251,0.85) 55%, rgba(249,250,251,0.1) 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #f9fafb 40%, rgba(249,250,251,0.88) 58%, rgba(249,250,251,0.05) 100%);"></div>
       </div>
 
       <div class="relative max-w-8xl mx-auto px-6 sm:px-10 lg:px-16 py-16 md:py-24 flex items-center" style="min-height: 480px;">
@@ -207,28 +207,10 @@ const shopCategories = [
     image: 'https://m.media-amazon.com/images/I/51HW5yOCeIL.jpg',
   },
   {
-    id: 'terminations',
-    label: 'Connectors & Accessories',
-    desc: 'RJ45 connectors, boots, keystone jacks and more.',
-    image: 'https://m.media-amazon.com/images/I/51CaISpaFTL.jpg',
-  },
-  {
-    id: 'cat6-shielded',
-    label: 'Cat6 Shielded (SFTP)',
-    desc: 'Shielded cables for high-interference environments.',
-    image: 'https://m.media-amazon.com/images/I/51nyGptTPOL.jpg',
-  },
-  {
-    id: 'cat6-plenum',
-    label: 'Cat6 Plenum (CMP)',
-    desc: 'Fire-rated cable for in-wall and above-ceiling runs.',
-    image: 'https://m.media-amazon.com/images/I/51cQ79cVYzL.jpg',
-  },
-  {
-    id: 'multi-packs',
-    label: 'Multi-Packs',
-    desc: '10-pack bundles in all colors and lengths.',
-    image: 'https://m.media-amazon.com/images/I/51M5ff2sS5L.jpg',
+    id: 'cameras',
+    label: 'Security Cameras',
+    desc: 'IP and analog cameras for commercial installations.',
+    image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80',
   },
 ]
 

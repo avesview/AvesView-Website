@@ -232,7 +232,7 @@ function goToSlide(i) { currentSlide.value = i }
 function nextSlide() { currentSlide.value = (currentSlide.value + 1) % 2 }
 function prevSlide() { currentSlide.value = (currentSlide.value + 1) % 2 === 0 ? 1 : 0 }
 function pauseSlider() { clearInterval(sliderTimer) }
-function resumeSlider() { sliderTimer = setInterval(nextSlide, 5000) }
+function resumeSlider() { sliderTimer = setInterval(nextSlide, 17000) }
 
 onMounted(() => { sliderTimer = setInterval(nextSlide, 17000) })
 onUnmounted(() => clearInterval(sliderTimer))

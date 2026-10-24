@@ -13,8 +13,8 @@
       />
 
       <!-- Text overlay — sits on the naturally blurred left side of the photo -->
-      <div class="absolute inset-0 flex items-center">
-        <div class="px-6 sm:px-10 lg:px-16 max-w-xl">
+      <div class="absolute inset-0 flex items-center" style="padding-left: 5%; padding-right: 55%;">
+        <div>
           <p class="text-brand-red text-xs font-bold uppercase tracking-widest mb-3">Bulk Cable &amp; Connectivity</p>
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-2">
             Built for the trade.

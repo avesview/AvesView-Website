@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-200">
+  <header class="bg-white shadow-sm border-b border-gray-200">
     <!-- Top utility bar — desktop only -->
     <div class="hidden md:block border-b border-gray-100">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-8">

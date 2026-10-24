@@ -4,12 +4,11 @@
     <!-- ═══════════════════════════════════════════
          HERO
     ════════════════════════════════════════════ -->
-    <section class="relative overflow-hidden bg-gray-100">
-      <!-- Full image at natural width — no cropping -->
+    <section class="relative overflow-hidden bg-gray-100" style="height: 700px;">
       <img
         src="/hero-bg.jpg"
         alt="AvesView CAT6 cable boxes on a warehouse pallet"
-        class="w-full block"
+        class="w-full h-full object-cover object-center"
       />
 
       <!-- Text overlay — sits on the naturally blurred left side of the photo -->

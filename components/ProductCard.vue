@@ -1,12 +1,12 @@
 <template>
   <NuxtLink :to="`/products/${product.slug}`" class="card group hover:shadow-md transition-shadow duration-200 flex flex-col">
     <!-- Product Image -->
-    <div class="h-48 bg-brand-gray-50 flex items-center justify-center p-4 overflow-hidden">
+    <div class="h-64 bg-white flex items-center justify-center overflow-hidden">
       <img
         v-if="primaryImage"
         :src="primaryImage"
         :alt="product.title"
-        class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
         loading="lazy"
         @error="(e) => e.target.style.display='none'"
       />

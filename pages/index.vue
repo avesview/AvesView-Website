@@ -42,6 +42,7 @@
         class="absolute inset-0 transition-transform duration-700 ease-in-out"
         :style="{ transform: `translateX(${(1 - currentSlide) * 100}%)` }"
         style="background-image: url('/hero-slide2.webp'); background-size: cover; background-position: center 40%;"
+        class="slide-2"
       >
         <!-- Dark overlay for readability on mobile -->
         <div class="absolute inset-0 bg-black/50 md:bg-gradient-to-l md:from-black/10 md:via-black/30 md:to-black/60"></div>
@@ -298,6 +299,14 @@
 
   </div>
 </template>
+
+<style scoped>
+@media (max-width: 768px) {
+  .slide-2 {
+    background-position: left top !important;
+  }
+}
+</style>
 
 <script setup>
 // Hero carousel

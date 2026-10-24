@@ -1087,46 +1087,6 @@
     ]
   },
   {
-    "id": "camera-silk-blend-sweatshirt",
-    "slug": "silk-blend-sweatshirt",
-    "title": "AV-BC-JBV20W-4 HIK Camera Junction Box Deep Base For Wall Mount CCTV Camera",
-    "category": "cameras",
-    "description": "AV-BC-JBV20W-4 HIK Camera Junction Box Deep Base For Wall Mount CCTV Camera",
-    "variants": [
-      {
-        "asin": "",
-        "sku": "AV-BC-JBV20W-4",
-        "color": "White",
-        "length": null,
-        "price": 0,
-        "image": "/img/av-junction-box.png",
-        "inStock": true,
-        "warehouseQty": 10,
-        "warehouseLocation": "A1"
-      }
-    ]
-  },
-  {
-    "id": "camera-denim-jacket",
-    "slug": "denim-jacket",
-    "title": "AV-WBE31W Full Aluminum Allow Security Camera Wall Mount Bracket Match For Dome Camera",
-    "category": "cameras",
-    "description": "AV-WBE31W Full Aluminum Allow Security Camera Wall Mount Bracket Match For Dome Camera",
-    "variants": [
-      {
-        "asin": "",
-        "sku": "AV-WBE31W",
-        "color": "White",
-        "length": null,
-        "price": 0,
-        "image": "https://www.avesview.com/wp-content/uploads/2018/05/AV-WBE31W-FaceView.jpg",
-        "inStock": true,
-        "warehouseQty": 10,
-        "warehouseLocation": "A1"
-      }
-    ]
-  },
-  {
     "id": "camera-jacket-skinny-fit",
     "slug": "jacket-skinny-fit",
     "title": "AvesView 180 Degree 4K Ultra Wide Angle Two-Way Talk POE IP Security Camera With Human Detection And Night Vision - White",
@@ -1420,6 +1380,46 @@
         "length": null,
         "price": 0,
         "image": "https://www.avesview.com/wp-content/uploads/2018/05/AV-IE252DB-8M8-PMST-Left-Side.jpg",
+        "inStock": true,
+        "warehouseQty": 10,
+        "warehouseLocation": "A1"
+      }
+    ]
+  },
+  {
+    "id": "camera-silk-blend-sweatshirt",
+    "slug": "silk-blend-sweatshirt",
+    "title": "AV-BC-JBV20W-4 HIK Camera Junction Box Deep Base For Wall Mount CCTV Camera",
+    "category": "cameras",
+    "description": "AV-BC-JBV20W-4 HIK Camera Junction Box Deep Base For Wall Mount CCTV Camera",
+    "variants": [
+      {
+        "asin": "",
+        "sku": "AV-BC-JBV20W-4",
+        "color": "White",
+        "length": null,
+        "price": 0,
+        "image": "/img/av-junction-box.png",
+        "inStock": true,
+        "warehouseQty": 10,
+        "warehouseLocation": "A1"
+      }
+    ]
+  },
+  {
+    "id": "camera-denim-jacket",
+    "slug": "denim-jacket",
+    "title": "AV-WBE31W Full Aluminum Allow Security Camera Wall Mount Bracket Match For Dome Camera",
+    "category": "cameras",
+    "description": "AV-WBE31W Full Aluminum Allow Security Camera Wall Mount Bracket Match For Dome Camera",
+    "variants": [
+      {
+        "asin": "",
+        "sku": "AV-WBE31W",
+        "color": "White",
+        "length": null,
+        "price": 0,
+        "image": "https://www.avesview.com/wp-content/uploads/2018/05/AV-WBE31W-FaceView.jpg",
         "inStock": true,
         "warehouseQty": 10,
         "warehouseLocation": "A1"

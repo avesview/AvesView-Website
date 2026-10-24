@@ -83,7 +83,7 @@
     <!-- Desktop category nav bar -->
     <div class="hidden md:block border-t border-gray-100">
       <div class="relative max-w-8xl mx-auto px-6 sm:px-10 lg:px-16">
-        <nav class="flex items-center gap-10 h-12 text-sm">
+        <nav class="flex items-center justify-between h-12 text-sm w-full">
 
           <!-- Ethernet Cables — Mega Menu -->
           <div class="relative group h-full flex items-center">
@@ -147,6 +147,9 @@
             </div>
           </div>
 
+          <!-- Custom Cables (no submenu) -->
+          <NuxtLink to="/custom-cables" class="text-gray-600 hover:text-brand-red font-medium transition-colors">Custom Cables</NuxtLink>
+
           <!-- Sound and Security (no submenu) -->
           <NuxtLink to="/products?category=sound-and-security" class="text-gray-600 hover:text-brand-red font-medium transition-colors">Sound and Security</NuxtLink>
 
@@ -167,13 +170,11 @@
           <!-- Pallet Deals (no submenu) -->
           <NuxtLink to="/products?category=pallet-deals" class="text-gray-600 hover:text-brand-red font-medium transition-colors">Pallet Deals</NuxtLink>
 
-          <!-- Quick Order — pushed to far right -->
-          <div class="ml-auto">
-            <NuxtLink to="/products" class="flex items-center gap-1.5 text-gray-600 hover:text-brand-red font-medium transition-colors text-sm">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-              Quick Order
-            </NuxtLink>
-          </div>
+          <!-- Quick Order -->
+          <NuxtLink to="/products" class="flex items-center gap-1.5 text-gray-600 hover:text-brand-red font-medium transition-colors text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            Quick Order
+          </NuxtLink>
 
         </nav>
       </div>
@@ -202,6 +203,7 @@
           <NuxtLink to="/products?category=patch-cables" class="mobile-nav-link pl-5" @click="mobileOpen = false">Patch Cables</NuxtLink>
           <NuxtLink to="/products?category=bulk-cables" class="mobile-nav-link pl-5" @click="mobileOpen = false">Bulk Cables</NuxtLink>
           <NuxtLink to="/products?category=terminations" class="mobile-nav-link pl-5" @click="mobileOpen = false">Terminations</NuxtLink>
+          <NuxtLink to="/custom-cables" class="mobile-nav-link" @click="mobileOpen = false">Custom Cables</NuxtLink>
           <NuxtLink to="/products?category=sound-and-security" class="mobile-nav-link" @click="mobileOpen = false">Sound and Security</NuxtLink>
           <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider px-3 mb-1 mt-2">Security Cameras</p>
           <NuxtLink to="/products?category=cameras" class="mobile-nav-link pl-5" @click="mobileOpen = false">Cameras</NuxtLink>

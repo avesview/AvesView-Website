@@ -12,8 +12,16 @@
       <div class="flex flex-col lg:flex-row gap-8">
         <!-- Sidebar Filters -->
         <aside class="lg:w-60 flex-shrink-0">
-          <div class="card p-5 sticky top-20">
-            <h2 class="font-bold text-brand-black mb-4">Filter Products</h2>
+          <!-- Mobile filter toggle -->
+          <button @click="filtersOpen = !filtersOpen" class="lg:hidden w-full flex items-center justify-between bg-white border border-gray-200 rounded-lg px-4 py-3 mb-3 text-sm font-semibold text-gray-800">
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L13 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586L3.293 6.707A1 1 0 013 6V4z"/></svg>
+              Filter Products
+            </span>
+            <svg class="w-4 h-4 transition-transform" :class="filtersOpen ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="card p-5 sticky top-20" :class="{ 'hidden lg:block': !filtersOpen }">
+            <h2 class="font-bold text-brand-black mb-4 hidden lg:block">Filter Products</h2>
 
             <!-- Search -->
             <div class="mb-5">
@@ -123,6 +131,7 @@ const { products, categories, getByCategory, searchProducts, getBasePrice } = us
 
 const search = ref('')
 const selectedCategory = ref(route.query.category || 'all')
+const filtersOpen = ref(false)
 const selectedColor = ref('')
 
 // Sync URL query param

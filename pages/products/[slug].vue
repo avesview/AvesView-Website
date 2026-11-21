@@ -260,15 +260,22 @@ const uniqueLengths = computed(() => {
   })
 })
 
-// Gallery thumbnails: main color-specific photo + shared listing gallery images
+// Gallery thumbnails: per-color gallery from Amazon listing
 const galleryThumbnails = computed(() => {
-  if (!product.value) return []
-  const main = activeVariant.value?.image ? [activeVariant.value.image] : []
-  const shared = product.value.gallery || []
-  // Deduplicate (main image might already be in gallery)
-  const seen = new Set(main)
-  const extra = shared.filter(img => !seen.has(img))
-  return [...main, ...extra]
+  if (!product.value || !activeVariant.value) return []
+  const color = activeVariant.value.color
+  const colorGallery = product.value.colorGallery?.[color]
+  if (colorGallery && colorGallery.length > 0) {
+    // Use the color-specific gallery (already includes the main photo as first item)
+    // But replace index 0 with the actual variant's image if length-specific photo differs
+    const variantImg = activeVariant.value.image
+    if (variantImg && variantImg !== colorGallery[0]) {
+      return [variantImg, ...colorGallery.slice(1)]
+    }
+    return colorGallery
+  }
+  // Fallback: just the variant image
+  return activeVariant.value.image ? [activeVariant.value.image] : []
 })
 
 function selectVariant(v) {

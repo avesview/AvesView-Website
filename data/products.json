@@ -791,13 +791,47 @@
         "warehouseLocation": "Overflow / Bay 6, Overflow / Bay 8"
       }
     ],
-    "gallery": [
-      "https://m.media-amazon.com/images/I/41kHL5QnS1L.jpg",
-      "https://m.media-amazon.com/images/I/41lgJ9hQ6tL.jpg",
-      "https://m.media-amazon.com/images/I/41OyqGTC+uL.jpg",
-      "https://m.media-amazon.com/images/I/41UUOTemRoL.jpg",
-      "https://m.media-amazon.com/images/I/51JsPmEBYJL.jpg"
-    ]
+    "colorGallery": {
+      "Blue": [
+        "https://m.media-amazon.com/images/I/51nyGptTPOL.jpg",
+        "https://m.media-amazon.com/images/I/41kHL5QnS1L.jpg",
+        "https://m.media-amazon.com/images/I/41lgJ9hQ6tL.jpg",
+        "https://m.media-amazon.com/images/I/41OyqGTC+uL.jpg",
+        "https://m.media-amazon.com/images/I/41UUOTemRoL.jpg",
+        "https://m.media-amazon.com/images/I/51JsPmEBYJL.jpg"
+      ],
+      "White": [
+        "https://m.media-amazon.com/images/I/518LN9x7chL.jpg",
+        "https://m.media-amazon.com/images/I/41y9R5tEW+L.jpg",
+        "https://m.media-amazon.com/images/I/41585rEbXCL.jpg",
+        "https://m.media-amazon.com/images/I/41kl73B8yvL.jpg",
+        "https://m.media-amazon.com/images/I/41+68zRtTzL.jpg"
+      ],
+      "Yellow": [
+        "https://m.media-amazon.com/images/I/51ORPMbQ2BL.jpg",
+        "https://m.media-amazon.com/images/I/41TEAX0wH1L.jpg",
+        "https://m.media-amazon.com/images/I/41Omd+8U7VL.jpg",
+        "https://m.media-amazon.com/images/I/41T7V59MTTL.jpg",
+        "https://m.media-amazon.com/images/I/41uaxW4dkdL.jpg"
+      ],
+      "Black": [
+        "https://m.media-amazon.com/images/I/51u8FLNQ3FL.jpg",
+        "https://m.media-amazon.com/images/I/41flc3PfTPL.jpg",
+        "https://m.media-amazon.com/images/I/414kGB7+hyL.jpg",
+        "https://m.media-amazon.com/images/I/41maRLXq2SL.jpg",
+        "https://m.media-amazon.com/images/I/41RtZVoFHrL.jpg"
+      ],
+      "Green": [
+        "https://m.media-amazon.com/images/I/51MCaQ-sxrL.jpg"
+      ],
+      "Red": [
+        "https://m.media-amazon.com/images/I/516htcHbh6L.jpg",
+        "https://m.media-amazon.com/images/I/411xgvMHOJL.jpg",
+        "https://m.media-amazon.com/images/I/418AbSrBnvL.jpg",
+        "https://m.media-amazon.com/images/I/41Tk5SwO-3L.jpg",
+        "https://m.media-amazon.com/images/I/41kmnqpHkHL.jpg"
+      ]
+    }
   },
   {
     "id": "B0D2JNCX2Q",

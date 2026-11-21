@@ -19,22 +19,22 @@
         <div>
           <div class="card overflow-hidden mb-4 aspect-square flex items-center justify-center bg-brand-gray-50 p-8">
             <img
-              :src="activeVariant?.image || primaryImage"
+              :src="activeImage"
               :alt="product.title"
               class="max-h-full object-contain"
               @error="(e) => e.target.style.display='none'"
             />
           </div>
-          <!-- Variant thumbnails — only show images for selected color -->
+          <!-- Gallery thumbnails: main color photo + shared listing images -->
           <div class="flex gap-2 overflow-x-auto pb-2">
             <button
-              v-for="v in colorThumbnails"
-              :key="v.asin"
-              @click="selectVariant(v)"
+              v-for="(img, i) in galleryThumbnails"
+              :key="i"
+              @click="activeImage = img"
               class="flex-shrink-0 w-16 h-16 rounded border-2 overflow-hidden transition-colors bg-brand-gray-50 p-1"
-              :class="activeVariant?.asin === v.asin ? 'border-brand-red' : 'border-brand-gray-200 hover:border-brand-gray-400'"
+              :class="activeImage === img ? 'border-brand-red' : 'border-brand-gray-200 hover:border-brand-gray-400'"
             >
-              <img :src="v.image" :alt="v.color" class="w-full h-full object-contain" />
+              <img :src="img" :alt="`Photo ${i + 1}`" class="w-full h-full object-contain" />
             </button>
           </div>
         </div>
@@ -233,13 +233,15 @@ const primaryImage = computed(() => getPrimaryImage(product.value))
 const categoryLabel = computed(() => getCategoryLabel(product.value?.category))
 
 const activeVariant = ref(null)
+const activeImage = ref(null)
 const qty = ref(1)
 const cartSuccess = ref(false)
 
-// Initialize active variant
+// Initialize active variant + image
 watchEffect(() => {
   if (product.value && !activeVariant.value) {
     activeVariant.value = product.value.variants[0] || null
+    activeImage.value = activeVariant.value?.image || primaryImage.value
   }
 })
 
@@ -258,10 +260,15 @@ const uniqueLengths = computed(() => {
   })
 })
 
-// Only show thumbnails matching the active color
-const colorThumbnails = computed(() => {
-  if (!product.value || !activeVariant.value) return []
-  return product.value.variants.filter(v => v.image && v.color === activeVariant.value.color)
+// Gallery thumbnails: main color-specific photo + shared listing gallery images
+const galleryThumbnails = computed(() => {
+  if (!product.value) return []
+  const main = activeVariant.value?.image ? [activeVariant.value.image] : []
+  const shared = product.value.gallery || []
+  // Deduplicate (main image might already be in gallery)
+  const seen = new Set(main)
+  const extra = shared.filter(img => !seen.has(img))
+  return [...main, ...extra]
 })
 
 function selectVariant(v) {
@@ -272,12 +279,16 @@ function selectByColor(color) {
   const v = product.value.variants.find(v => v.color === color &&
     (!activeVariant.value?.length || v.length === activeVariant.value.length))
   activeVariant.value = v || product.value.variants.find(v => v.color === color)
+  // Reset main image to the new color's photo
+  activeImage.value = activeVariant.value?.image || primaryImage.value
 }
 
 function selectByLength(length) {
   const v = product.value.variants.find(v => v.length === length &&
     (!activeVariant.value?.color || v.color === activeVariant.value.color))
   activeVariant.value = v || product.value.variants.find(v => v.length === length)
+  // Reset main image to the new variant's photo
+  activeImage.value = activeVariant.value?.image || primaryImage.value
 }
 
 function addToCartHandler() {

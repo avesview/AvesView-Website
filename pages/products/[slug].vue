@@ -25,10 +25,10 @@
               @error="(e) => e.target.style.display='none'"
             />
           </div>
-          <!-- Variant thumbnails -->
+          <!-- Variant thumbnails — only show images for selected color -->
           <div class="flex gap-2 overflow-x-auto pb-2">
             <button
-              v-for="v in product.variants.filter(v => v.image)"
+              v-for="v in colorThumbnails"
               :key="v.asin"
               @click="selectVariant(v)"
               class="flex-shrink-0 w-16 h-16 rounded border-2 overflow-hidden transition-colors bg-brand-gray-50 p-1"
@@ -148,10 +148,6 @@
                 <dt class="text-brand-gray-400 w-24 flex-shrink-0">SKU</dt>
                 <dd class="text-brand-black font-mono">{{ activeVariant?.sku || '—' }}</dd>
               </div>
-              <div class="flex gap-4">
-                <dt class="text-brand-gray-400 w-24 flex-shrink-0">ASIN</dt>
-                <dd class="text-brand-black font-mono">{{ activeVariant?.asin || '—' }}</dd>
-              </div>
               <div v-if="activeVariant?.warehouseLocation" class="flex gap-4">
                 <dt class="text-brand-gray-400 w-24 flex-shrink-0">Location</dt>
                 <dd class="text-brand-black">{{ activeVariant.warehouseLocation }}</dd>
@@ -254,7 +250,18 @@ const uniqueColors = computed(() => {
 
 const uniqueLengths = computed(() => {
   if (!product.value) return []
-  return [...new Set(product.value.variants.map(v => v.length).filter(Boolean))]
+  const lengths = [...new Set(product.value.variants.map(v => v.length).filter(Boolean))]
+  return lengths.sort((a, b) => {
+    const numA = parseInt(a)
+    const numB = parseInt(b)
+    return numA - numB
+  })
+})
+
+// Only show thumbnails matching the active color
+const colorThumbnails = computed(() => {
+  if (!product.value || !activeVariant.value) return []
+  return product.value.variants.filter(v => v.image && v.color === activeVariant.value.color)
 })
 
 function selectVariant(v) {

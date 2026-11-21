@@ -397,7 +397,7 @@
       {
         "asin": "B0H4XGDVG8",
         "sku": "850060447785",
-        "color": "Standard",
+        "color": "Green",
         "length": "100ft",
         "price": 26.99,
         "image": "https://m.media-amazon.com/images/I/51MCaQ-sxrL.jpg",
@@ -430,7 +430,7 @@
       {
         "asin": "B0DWLDCPGR",
         "sku": "850060447525",
-        "color": "Standard",
+        "color": "Black",
         "length": "100ft",
         "price": 26.99,
         "image": "https://m.media-amazon.com/images/I/51u8FLNQ3FL.jpg",
@@ -441,7 +441,7 @@
       {
         "asin": "B0DWLCSPF8",
         "sku": "850060447518",
-        "color": "Standard",
+        "color": "Black",
         "length": "50ft",
         "price": 17.99,
         "image": "https://m.media-amazon.com/images/I/51dhU+LQ1HL.jpg",
@@ -452,7 +452,7 @@
       {
         "asin": "B0H5W25QCQ",
         "sku": "850060447778",
-        "color": "Standard",
+        "color": "Green",
         "length": "50ft",
         "price": 17.99,
         "image": "https://m.media-amazon.com/images/I/51HBfGifvSL.jpg",
@@ -474,7 +474,7 @@
       {
         "asin": "B0HF6XR2PX",
         "sku": "850060447907",
-        "color": "Standard",
+        "color": "Red",
         "length": "100ft",
         "price": 26.99,
         "image": "",
@@ -485,7 +485,7 @@
       {
         "asin": "B0H5VSJPGF",
         "sku": "850060447815",
-        "color": "Standard",
+        "color": "Black",
         "length": "150ft",
         "price": 36.99,
         "image": "https://m.media-amazon.com/images/I/518lRrmKvIL.jpg",
@@ -496,7 +496,7 @@
       {
         "asin": "B0H5VX5HFV",
         "sku": "850060447808",
-        "color": "Standard",
+        "color": "Blue",
         "length": "150ft",
         "price": 36.99,
         "image": "https://m.media-amazon.com/images/I/51nbC+u7vxL.jpg",
@@ -507,7 +507,7 @@
       {
         "asin": "B0H5VNMMJX",
         "sku": "850060447792",
-        "color": "Standard",
+        "color": "Green",
         "length": "150ft",
         "price": 36.99,
         "image": "https://m.media-amazon.com/images/I/816Jqp2NloL._SL1500_.jpg",
@@ -518,7 +518,7 @@
       {
         "asin": "B0HF759PLL",
         "sku": "850060447914",
-        "color": "Standard",
+        "color": "Red",
         "length": "150ft",
         "price": 36.99,
         "image": "",
@@ -529,7 +529,7 @@
       {
         "asin": "B0H5VPXCML",
         "sku": "850060447822",
-        "color": "Standard",
+        "color": "White",
         "length": "150ft",
         "price": 36.99,
         "image": "https://m.media-amazon.com/images/I/51ZwKu9tjJL.jpg",
@@ -540,7 +540,7 @@
       {
         "asin": "B0H4XH1TRG",
         "sku": "850060447730",
-        "color": "Standard",
+        "color": "Yellow",
         "length": "150ft",
         "price": 36.99,
         "image": "https://m.media-amazon.com/images/I/51JKCSBEL3L.jpg",
@@ -573,7 +573,7 @@
       {
         "asin": "B0H5VWH7T7",
         "sku": "850060447761",
-        "color": "Standard",
+        "color": "Green",
         "length": "25ft",
         "price": 10.99,
         "image": "https://m.media-amazon.com/images/I/51ns-fIsPGL.jpg",
@@ -584,7 +584,7 @@
       {
         "asin": "B0H4X74SGC",
         "sku": "850060447693",
-        "color": "Standard",
+        "color": "Yellow",
         "length": "25ft",
         "price": 10.99,
         "image": "https://m.media-amazon.com/images/I/51okZme0QSL.jpg",
@@ -606,7 +606,7 @@
       {
         "asin": "B0HF6XCL89",
         "sku": "850060447884",
-        "color": "Standard",
+        "color": "Red",
         "length": "25ft",
         "price": 10.99,
         "image": "",
@@ -628,7 +628,7 @@
       {
         "asin": "B0HF6RD5RT",
         "sku": "850060447891",
-        "color": "Standard",
+        "color": "Red",
         "length": "50ft",
         "price": 17.99,
         "image": "",
@@ -650,7 +650,7 @@
       {
         "asin": "B0H5VDM44G",
         "sku": "850060447846",
-        "color": "Standard",
+        "color": "Black",
         "length": "5ft",
         "price": 8.99,
         "image": "https://m.media-amazon.com/images/I/51SUut1KNjL.jpg",
@@ -661,7 +661,7 @@
       {
         "asin": "B0H5VQHN6D",
         "sku": "850060447839",
-        "color": "Standard",
+        "color": "Blue",
         "length": "5ft",
         "price": 8.99,
         "image": "https://m.media-amazon.com/images/I/51SnBABNykL.jpg",
@@ -672,7 +672,7 @@
       {
         "asin": "B0H5W2GMQB",
         "sku": "850060447747",
-        "color": "Standard",
+        "color": "Green",
         "length": "5ft",
         "price": 8.99,
         "image": "https://m.media-amazon.com/images/I/71s3YAGilPL._SL1500_.jpg",
@@ -694,7 +694,7 @@
       {
         "asin": "B0H5VKY5Y3",
         "sku": "850060447853",
-        "color": "Standard",
+        "color": "White",
         "length": "5ft",
         "price": 8.99,
         "image": "https://m.media-amazon.com/images/I/713hnDAPb+L._SL1500_.jpg",
@@ -705,7 +705,7 @@
       {
         "asin": "B0H4XJ4WDQ",
         "sku": "850060447723",
-        "color": "Standard",
+        "color": "Yellow",
         "length": "5ft",
         "price": 8.99,
         "image": "https://m.media-amazon.com/images/I/71DIIiIY8rL._SL1500_.jpg",
@@ -738,7 +738,7 @@
       {
         "asin": "B0H5VV8GYC",
         "sku": "850060447754",
-        "color": "Standard",
+        "color": "Green",
         "length": "10ft",
         "price": 9.99,
         "image": "https://m.media-amazon.com/images/I/81w-dWJz5lL._SL1500_.jpg",
@@ -749,7 +749,7 @@
       {
         "asin": "B0HF711T3T",
         "sku": "850060447877",
-        "color": "Standard",
+        "color": "Red",
         "length": "10ft",
         "price": 9.99,
         "image": "",
@@ -771,7 +771,7 @@
       {
         "asin": "B0H4XR22DB",
         "sku": "850060447686",
-        "color": "Standard",
+        "color": "Yellow",
         "length": "10ft",
         "price": 9.99,
         "image": "https://m.media-amazon.com/images/I/51kVdwkKizL.jpg",
@@ -1149,7 +1149,7 @@
   {
     "id": "camera-avesview-4k-8mp-dual-light-full-color-human-vehicle-detection-poe-bullet-surveillance-camera-white",
     "slug": "avesview-4k-8mp-dual-light-full-color-human-vehicle-detection-poe-bullet-surveillance-camera-white",
-    "title": "AvesView 4K 8MP Dual Light Full Color Human Vehicle Detection POE Bullet Surveillance Camera – White",
+    "title": "AvesView 4K 8MP Dual Light Full Color Human Vehicle Detection POE Bullet Surveillance Camera \u2013 White",
     "category": "cameras",
     "description": "Introducing the AvesView Dual Light Bullet Camera with long-distance Night Vision that secures you even from miles away.",
     "variants": [
@@ -1169,7 +1169,7 @@
   {
     "id": "camera-patterned-wrap-dress-2",
     "slug": "patterned-wrap-dress-2",
-    "title": "AvesView 4K 8MP Dual Light Full Color Human Vehicle Detection POE Bullet Surveillance Camera – Black",
+    "title": "AvesView 4K 8MP Dual Light Full Color Human Vehicle Detection POE Bullet Surveillance Camera \u2013 Black",
     "category": "cameras",
     "description": "High Quality Bullet Camera with enhanced Motion Detection that detects any and every movement. Designed to protect you in all the means possible.",
     "variants": [
@@ -1189,7 +1189,7 @@
   {
     "id": "camera-t-shirt-regular-fit-2",
     "slug": "t-shirt-regular-fit-2",
-    "title": "AvesView 4K 8MP Dual Light Red Blue Alarm Full Color Human Vehicle Detection POE Turret Surveillance Camera – Black",
+    "title": "AvesView 4K 8MP Dual Light Red Blue Alarm Full Color Human Vehicle Detection POE Turret Surveillance Camera \u2013 Black",
     "category": "cameras",
     "description": "An Anti-Flicker 8MP 4K Surveillance camera of which revitalizes the new era of Security Cameras that you absolutely need in your home.",
     "variants": [
@@ -1209,7 +1209,7 @@
   {
     "id": "camera-poplin-shirt-regular-fit-2",
     "slug": "poplin-shirt-regular-fit-2",
-    "title": "AvesView 4K 8MP Dual Light Red Blue Alarm Full Color Human Vehicle Detection POE Turret Surveillance Camera – White",
+    "title": "AvesView 4K 8MP Dual Light Red Blue Alarm Full Color Human Vehicle Detection POE Turret Surveillance Camera \u2013 White",
     "category": "cameras",
     "description": "A Full Color Bullet Surveillance Camera of which delivers high-quality performance that lives up to your expectations.",
     "variants": [
@@ -1229,7 +1229,7 @@
   {
     "id": "camera-shorts-with-a-tie-belt-2",
     "slug": "shorts-with-a-tie-belt-2",
-    "title": "AvesView 4K 8MP IR Full Color Human Vehicle Detection POE Bullet Surveillance Camera – Black",
+    "title": "AvesView 4K 8MP IR Full Color Human Vehicle Detection POE Bullet Surveillance Camera \u2013 Black",
     "category": "cameras",
     "description": "Motorized Bullet Camera With Infrared 4K Resolution giving you the security you need even when you are away from home.",
     "variants": [
@@ -1249,7 +1249,7 @@
   {
     "id": "camera-silk-blend-sweatshirt-2",
     "slug": "silk-blend-sweatshirt-2",
-    "title": "AvesView 4K 8MP IR Full Color Human Vehicle Detection POE Bullet Surveillance Camera – White",
+    "title": "AvesView 4K 8MP IR Full Color Human Vehicle Detection POE Bullet Surveillance Camera \u2013 White",
     "category": "cameras",
     "description": "With Built-In Mic and Speaker that allows you to frighten your perpetrator not the other way around.",
     "variants": [
@@ -1269,7 +1269,7 @@
   {
     "id": "camera-jogging-top-2",
     "slug": "jogging-top-2",
-    "title": "AvesView 4K 8MP Motorized Zoom Dual Light Full Color Human Vehicle Detection PoE Bullet Surveillance Camera – White",
+    "title": "AvesView 4K 8MP Motorized Zoom Dual Light Full Color Human Vehicle Detection PoE Bullet Surveillance Camera \u2013 White",
     "category": "cameras",
     "description": "An 8 Megapixel High resolution Camera with full 24/7 color illumination. Premium video quality designed to stand out from the rest.",
     "variants": [
@@ -1309,7 +1309,7 @@
   {
     "id": "camera-t-shirt-regular-fit",
     "slug": "t-shirt-regular-fit",
-    "title": "AvesView 4K 8MP POE Dual Light Full Color Turret CCTV Camera – White",
+    "title": "AvesView 4K 8MP POE Dual Light Full Color Turret CCTV Camera \u2013 White",
     "category": "cameras",
     "description": "With Color Night Optics, this will help with accurate identification and give you the greatest amount of visibility at night and easier to spot your culprit.",
     "variants": [
@@ -1369,7 +1369,7 @@
   {
     "id": "camera-jogging-top",
     "slug": "jogging-top",
-    "title": "AvesView 8MP 4K 2.8 Fixed Lens IP/Network POE Dual Light Full Color Turret CCTV Camera – Black",
+    "title": "AvesView 8MP 4K 2.8 Fixed Lens IP/Network POE Dual Light Full Color Turret CCTV Camera \u2013 Black",
     "category": "cameras",
     "description": "With additional pixels in this Turret Camera make the digital zoom more effective which provides more details at a greater distance than before.",
     "variants": [
